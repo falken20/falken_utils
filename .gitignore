@@ -1,2 +1,5 @@
 .idea/
 venv/
+*.py[cod]
+__pycache__/
+lib/

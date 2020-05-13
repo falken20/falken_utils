@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# This previous line is useless inPython3
 
 """
 API Daikin: https://github.com/ael-code/daikin-control
