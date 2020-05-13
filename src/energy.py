@@ -1,7 +1,6 @@
 # by Richi Rod AKA @richionline / falken20
 
 
-import requests
 from requests import Session
 
 
@@ -27,6 +26,26 @@ class SelectContractException(Exception):
 
 class Energy:
 
+    _domain = "https://www.i-de.es/consumidores/rest"
+    _login_url = _domain + "/loginNew/login"
+    _reading_url = _domain + "/escenarioNew/obtenerMedicionOnline/12"
+    _reading_of_the_day_url = _domain + "/consumoNew/obtenerDatosConsumo/fechaInicio" \
+                                        "/{date}/colectivo/USU/frecuencia/horas/acumular/false"
+    _icp_status_url = _domain + "/rearmeICP/consultarEstado"
+    _contracts_url = _domain + "/cto/listaCtos/"
+    _contract_detail_url = _domain + "/detalleCto/detalle/"
+    _contract_selection_url = _domain + "/cto/seleccion/"
+    _obtener_escenarios_url = _domain + "/escenarioNew/obtenerEscenariosRest/"
+    _obtener_escenarios_contador_url = _domain + "/escenarioNew/obtenerEscenariosRestContador/"
+
+    _headers = {
+        'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like "
+                      "Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36",
+        'accept': "application/json; charset=utf-8",
+        'content-type': "application/json; charset=utf-8",
+        'cache-control': "no-cache"
+    }
+
     def __init__(self, user, password):
         """Energy class __init__ method"""
         self._user = user
@@ -34,32 +53,6 @@ class Energy:
         self._token = None
         self._cookie = None
         self._session = None
-
-        self.URL_LOGIN = "https://www.iberdrola.es/webcli/preLogin"
-        self.URL_LOGIN = "https://www.iberdrola.es/webcli/preLogin"
-        self.URL_DATA = "https://www.iberdrola.es/webcli/appesp/usuario/data"
-        self._domain = "https://www.i-de.es"
-        self._login_url = self._domain + "/consumidores/rest/loginNew/login"
-        self._watthourmeter_url = self._domain + "/consumidores/rest/escenarioNew/obtenerMedicionOnline/24"
-        self._icp_status_url = self._domain + "/consumidores/rest/rearmeICP/consultarEstado"
-        self._contracts_url = self._domain + "/consumidores/rest/cto/listaCtos/"
-        self._contract_detail_url = self._domain + "/consumidores/rest/detalleCto/detalle/"
-        self._contract_selection_url = self._domain + "/consumidores/rest/cto/seleccion/"
-        self._headers = {
-            'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36",
-            'accept': "application/json; charset=utf-8",
-            'content-type': "application/json; charset=utf-8",
-            'cache-control': "no-cache"
-        }
-
-    @staticmethod
-    def _headers_for_request(self):
-        return {
-            'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36",
-            'accept': "application/json; charset=utf-8",
-            'content-type': "application/json; charset=utf-8",
-            'cache-control': "no-cache"
-        }
 
     def login(self):
         """Creates session with your credentials"""
@@ -78,18 +71,28 @@ class Energy:
         if not self._session:
             raise SessionException("Session required, use login() method to obtain a session")
 
-    def watt_hour_meter(self):
+    def reading(self):
         """Returns your current power consumption."""
         self._check_session()
-        response = self._session.request("GET", self._watthourmeter_url, headers=self._headers)
+        response = self._session.request("GET", self._reading_url, headers=self._headers)
+        if response.status_code != 200:
+            raise ResponseException(response)
+        if not response.text:
+            raise NoResponseException(response)
+        json_response = response.json()
+        # return json_response['valMagnitud']
+        return json_response
+
+    def reading_of_the_day(self):
+        """Returns your current power consumption."""
+        self._check_session()
+        response = self._session.request("GET", self._reading_of_the_day_url, headers=self._headers)
         if response.status_code != 200:
             raise ResponseException
         if not response.text:
             raise NoResponseException
         json_response = response.json()
-        # return json_response['valMagnitud']
         return json_response
-
 
     def icp_status(self):
         """Returns the status of your ICP."""
@@ -100,7 +103,8 @@ class Energy:
         if not response.text:
             raise NoResponseException
         json_response = response.json()
-        if json_response["icp"] == "trueConectado":
+        print(json_response)
+        if json_response["icp"] == "true":
             return True
         else:
             return False
@@ -135,3 +139,23 @@ class Energy:
         json_response = response.json()
         if not json_response["success"]:
             raise
+
+    def escenarios(self):
+        self._check_session()
+        response = self._session.request("GET", self._obtener_escenarios_url, headers=self._headers)
+        if response.status_code != 200:
+            raise ResponseException
+        if not response.text:
+            raise NoResponseException
+        json_response = response.json()
+        return json_response
+
+    def escenarios_contador(self):
+        self._check_session()
+        response = self._session.request("POST", self._obtener_escenarios_contador_url, headers=self._headers)
+        if response.status_code != 200:
+            raise ResponseException
+        if not response.text:
+            raise NoResponseException
+        json_response = response.json()
+        return json_response
