@@ -1,5 +1,7 @@
 .idea/
+.DS_Store
 venv/
 *.py[cod]
 __pycache__/
 lib/
+#*.sqlite3
