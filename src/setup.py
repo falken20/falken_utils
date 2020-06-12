@@ -3,7 +3,7 @@ import setuptools
 from src import __version__
 
 
-with open("README.md", "r") as fh:
+with open("../README.md", "r") as fh:
     long_description = fh.read()
 
 
@@ -13,7 +13,7 @@ def get_requirements():
     """
     dep = []
 
-    with open("requirements.txt", "r") as fp:
+    with open("../requirements.txt", "r") as fp:
         line = fp.readline()
         while line:
             dep.append(line.strip())
