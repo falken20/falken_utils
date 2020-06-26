@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'english_dic/css/style.css' %}">
+
+<!-- Rotating card -->
+<div class="card">
+
+    <!-- Image-->
+    <div>
+      <img class="card-img-top" src="{% static 'english_dic/images/flag_uk-spain.jpg' %}">
+    </div>
+
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4 class="card-title font-weight-bold my-4">kinf of - adverb</h4>
+        </div>
+        <div class="flip-card-back">
+          <h4 class="card-title font-weight-bold my-4">más o menos, un poco
+        </div>
+      </div>
+    </div>
+
+</div>
+<!-- Rotating card -->
+
+{% endblock content %}

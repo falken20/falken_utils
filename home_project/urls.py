@@ -16,8 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from app_english_dic.views import card_view
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('about/', about_view),
+
+    # About To_Do app
     path('todo/', include('app_todo.urls')),
+
+    # About English Dic app
+
+    path('cards/', card_view)
 ]
