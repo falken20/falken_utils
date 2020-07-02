@@ -16,16 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from app_english_dic.views import card_view
+from app_english_dic import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('about/', about_view),
+
+    # TODO: Update with the true index page and remove the from entry for app_enlgish_dic.views
+    path('', views.card_view, name='index'),
 
     # About To_Do app
     path('todo/', include('app_todo.urls')),
 
     # About English Dic app
-
-    path('cards/', card_view)
+    # path('card/', views.CardView.as_view(), name='card_view'),
+    path('cards/', include('app_english_dic.urls')),
 ]
+
