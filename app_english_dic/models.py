@@ -1,4 +1,28 @@
 from django.db import models
+import random
+
+
+def get_count_words(model):
+    """ Return the objects number in the model
+    :return: Return integer with the number of objects
+    """
+    return WordItem.objects.all().count()
+
+
+def __get_max_id(model):
+    """ Return the max id in the model"""
+    return model.objects.all().aggregate(max_id=models.Max("id"))['max_id']
+
+
+def get_random_item(model):
+    """ Return a random object of the model"""
+    max_id = __get_max_id(model)
+    # Looking for a valid id because the model has deletions
+    while True:
+        pk = random.randint(1, max_id)
+        worditem = model.objects.filter(pk=pk).first()
+        if worditem:
+            return worditem
 
 
 class WordTypeItem(models.Model):
@@ -16,6 +40,12 @@ class WordItem(models.Model):
     word_type = models.ForeignKey(WordTypeItem, on_delete=models.PROTECT)
     word_times = models.IntegerField(default=0)  # Times this word was shown
 
+    class Meta:
+        """ Model metadata is “anything that’s not a field”, such as ordering options (ordering),
+        database table name (db_table), or human-readable singular and plural names (verbose_name and
+        verbose_name_plural). None are required, and adding class Meta to a model is completely optional."""
+        verbose_name = "English/Spanish Word"
+        verbose_name_plural = "English/Spanish Words"
+
     def __str__(self):
         return self.word_en + ' - ' + self.word_es
-
