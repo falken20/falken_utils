@@ -3,7 +3,7 @@ import setuptools
 from src import __version__
 
 
-with open("../README.md", "r") as fh:
+with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
@@ -13,7 +13,7 @@ def get_requirements():
     """
     dep = []
 
-    with open("../requirements.txt", "r") as fp:
+    with open("requirements.txt", "r") as fp:
         line = fp.readline()
         while line:
             dep.append(line.strip())
@@ -23,11 +23,11 @@ def get_requirements():
 
 
 setuptools.setup(
-    name="falken_home",
+    name="Falken_home",
     version=__version__,
     author="Richi Rod",
     author_email="ricardorg20@gmail.com",
-    description="Get any data from Home consuming",
+    description="Some utilities for data home and others",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/falken20/falken_home",

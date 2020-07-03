@@ -12,7 +12,6 @@ from .models import get_random_item, get_count_words
 
 class CardView(generic.ListView):
     count_words = get_count_words(WordItem)
-    print('ROD: count_words: ', count_words)
 
     template_name = 'english_dic/cards.html'
     queryset = get_random_item(WordItem)

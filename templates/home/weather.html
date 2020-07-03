@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'english_dic/css/style.css' %}"> -->
+
+<!-- Rotating card -->
+<div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th> {{ city }}</th>
+                <th> {{ time }}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for element in data_weather %}
+
+            <tr>
+                <td> {{ element.Parameter }} </td>
+                <td> {{ element.Value }} </td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+<!-- Rotating card -->
+
+{% endblock content %}
