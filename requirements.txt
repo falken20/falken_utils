@@ -5,4 +5,5 @@ lxml
 
 # Necessary in Heroku
 gunicorn
+whitenoise
 #django-heroku
