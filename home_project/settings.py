@@ -16,7 +16,7 @@ SECRET_KEY = 'q8a#w&cl$k$@5n_!-q$gkoy0)^*k=w98=3dff_2k#2p@u=aszx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'falken-home.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'falken-home.herokuapp.com']
 
 
 # Application definition
@@ -112,8 +112,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles') # ROD: About django.contrib.staticfiles installed apps
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
