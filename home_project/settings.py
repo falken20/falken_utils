@@ -16,7 +16,7 @@ SECRET_KEY = 'q8a#w&cl$k$@5n_!-q$gkoy0)^*k=w98=3dff_2k#2p@u=aszx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'falken-home.herokuapp.com']
 
 
 # Application definition
