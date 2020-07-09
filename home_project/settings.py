@@ -13,10 +13,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'q8a#w&cl$k$@5n_!-q$gkoy0)^*k=w98=3dff_2k#2p@u=aszx'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Heroku is a server web for running the app
+HEROKU = ('ENV' in os.environ and os.environ['ENV'] == 'heroku')
+DEBUG = not HEROKU
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'falken-home.herokuapp.com']
+# SECURITY WARNING: don't run with debug turned on in production!
+if DEBUG:
+    ALLOWED_HOSTS = ['*']
+else:
+    ALLOWED_HOSTS = ['falken-home.herokuapp.com']
+
+print('ROD vars\n DEBUG: %s\n ALLOWED_HOSTS: %s' % (format(DEBUG), format(ALLOWED_HOSTS)))
 
 
 # Application definition
