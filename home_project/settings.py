@@ -23,8 +23,8 @@ if DEBUG:
 else:
     ALLOWED_HOSTS = ['falken-home.herokuapp.com']
 
-print('ROD vars\n DEBUG: %s\n ALLOWED_HOSTS: %s' % (format(DEBUG), format(ALLOWED_HOSTS)))
-
+# print('ROD vars\n DEBUG: %s\n ALLOWED_HOSTS: %s' % (format(DEBUG), format(ALLOWED_HOSTS)))
+print(f'ROD --> Vars:\n DEBUG: {DEBUG}\n ALLOWED_HOSTS: {ALLOWED_HOSTS}')
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'app_english_dic',
     'app_home',
     'app_todo',
+    'app_books',
 ]
 
 MIDDLEWARE = [
