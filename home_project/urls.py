@@ -31,7 +31,10 @@ urlpatterns = [
     # path('card/', views.CardView.as_view(), name='card_view'),
     path('cards/', include('app_english_dic.urls')),
 
-    # Abount Home app
+    # About Home app
     path('weather/', include('app_home.urls')),
+
+    # About Books app
+    path('books/', include('app_books.urls')),
 ]
 
