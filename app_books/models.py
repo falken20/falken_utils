@@ -11,7 +11,7 @@ class AuthorItem(models.Model):
 
 class BookItem(models.Model):
     """ Class for save the different books. """
-    book_year = models.IntegerField(max_length=4)
+    book_year = models.IntegerField()
     book_title = models.TextField()
     book_author = models.ForeignKey(AuthorItem, on_delete=models.PROTECT)
 

@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.views import generic
 
 from .models import WordItem, WordTypeItem
-from .models import get_random_item, get_count_words
+from .utils import get_random_item, get_count_words
 
 
 # def card_view(request):
