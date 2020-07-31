@@ -2,8 +2,8 @@ requests>=2.22.0
 django==3.0
 pandas
 lxml
+psycopg2  # PostgreSQL
 
 # Necessary in Heroku
 gunicorn
 whitenoise
-#django-heroku
