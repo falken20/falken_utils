@@ -1,4 +1,6 @@
 import random
+from django.db import models
+
 from .models import WordItem
 
 
@@ -17,8 +19,10 @@ def __get_max_id(model):
 def get_random_item(model):
     """ Return a random object of the model"""
     max_id = __get_max_id(model)
+    #TODO: Change the print statement for Logging
+    print(f'ROD: Max ID in the DB: {max_id}')
     # Looking for a valid id because the model has deletions
-    while True:
+    while True and not max_id is None:
         pk = random.randint(1, max_id)
         worditem = model.objects.filter(pk=pk).first()
         if worditem:
