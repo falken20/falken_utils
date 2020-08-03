@@ -27,7 +27,6 @@ else:
 print(f'ROD --> Vars:\n DEBUG: {DEBUG}\n ALLOWED_HOSTS: {ALLOWED_HOSTS}')
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -35,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     # My Apps
     'app_english_dic',
     'app_home',
