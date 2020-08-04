@@ -1,9 +1,22 @@
 requests>=2.22.0
 django==3.0
-pandas
-lxml
-psycopg2  # PostgreSQL
+pandas>=0.25.3
+lxml==4.5.2
+psycopg2==2.8.5  # PostgreSQL
 
 # Necessary in Heroku
-gunicorn
-whitenoise
+gunicorn>=20.0.4
+whitenoise>=5.1.0
+
+# Others
+asgiref==3.2.10
+certifi==2020.6.20
+chardet==3.0.4
+idna==2.10
+numpy==1.19.1
+python-dateutil==2.8.1
+pytz==2020.1
+six==1.15.0
+sqlparse==0.3.1
+urllib3==1.25.10
+python-dotenv>=0.14.0

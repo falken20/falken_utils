@@ -2,16 +2,15 @@
 # TODO: Tag all the files with the copyright
 
 import os
+from dotenv import load_dotenv  # Manage environment vars in .env file
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Looking for .env file for environment vars
+load_dotenv(os.path.join(BASE_DIR, '.env'), override=True)
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'q8a#w&cl$k$@5n_!-q$gkoy0)^*k=w98=3dff_2k#2p@u=aszx'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # Heroku is a server web for running the app
 HEROKU = ('ENV' in os.environ and os.environ['ENV'] == 'heroku')
@@ -94,6 +93,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
 }
+
+# In production environment (in this case Heroku) it is necessary to change the DB url
+if HEROKU:
+    DATABASES['default'] = os.getenv('DATABASE_URL')
 
 
 # Password validation
