@@ -16,6 +16,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 HEROKU = ('ENV' in os.environ and os.environ['ENV'] == 'heroku')
 DEBUG = not HEROKU
 
+print(f'ROD Production Environment: {HEROKU}')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 if DEBUG:
     ALLOWED_HOSTS = ['*']
@@ -23,7 +25,7 @@ else:
     ALLOWED_HOSTS = ['falken-home.herokuapp.com']
 
 # print('ROD vars\n DEBUG: %s\n ALLOWED_HOSTS: %s' % (format(DEBUG), format(ALLOWED_HOSTS)))
-print(f'ROD --> Vars:\n DEBUG: {DEBUG}\n ALLOWED_HOSTS: {ALLOWED_HOSTS}')
+print(f'ROD DEBUG: {DEBUG}\n ALLOWED_HOSTS: {ALLOWED_HOSTS}')
 
 # Application definition
 INSTALLED_APPS = [
@@ -80,7 +82,7 @@ WSGI_APPLICATION = 'home_project.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'secondary': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'falken_homedb',
         'USER': 'falken_home',
@@ -88,7 +90,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '',
     },
-    'secondary': {
+    'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
@@ -98,7 +100,7 @@ DATABASES = {
 if HEROKU:
     DATABASES['default'] = os.getenv('DATABASE_URL')
 
-print(f'ROD: Databsa url: {DATABASES}')
+print(f'ROD: Database url: {DATABASES["default"]}')
 
 
 # Password validation
