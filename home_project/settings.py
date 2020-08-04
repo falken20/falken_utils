@@ -16,9 +16,15 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # Heroku is a server web for running the app
 HEROKU = ('ENV' in os.environ and os.environ['ENV'] == 'PRO')
-DEBUG = not HEROKU
 
-print(f'ROD Production Environment: {HEROKU}')
+print(f'ROD --> ENV: {HEROKU}')
+
+if 'DEBUG' in os.environ:
+    DEBUG = os.getenv('DEBUG')
+else:
+    DEBUG = not HEROKU
+
+print(f'ROD --> DEBUG: {DEBUG}')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if DEBUG:
@@ -27,7 +33,7 @@ else:
     ALLOWED_HOSTS = ['falken-home.herokuapp.com']
 
 # print('ROD vars\n DEBUG: %s\n ALLOWED_HOSTS: %s' % (format(DEBUG), format(ALLOWED_HOSTS)))
-print(f'ROD DEBUG: {DEBUG}\n ALLOWED_HOSTS: {ALLOWED_HOSTS}')
+print(f'ROD --> ALLOWED_HOSTS: {ALLOWED_HOSTS}')
 
 # Application definition
 INSTALLED_APPS = [
@@ -79,10 +85,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'home_project.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
 DATABASES = {
     'secondary': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -102,11 +104,7 @@ DATABASES = {
 if HEROKU:
     DATABASES['default'] = dj_database_url.config(default=os.getenv('DATABASE_URL'))
 
-print(f'ROD: Database url: {DATABASES["default"]}')
-
-
-# Password validation
-# https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
+print(f'ROD --> DATABASES: {DATABASES["default"]}')
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -123,10 +121,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-# Internationalization
-# https://docs.djangoproject.com/en/3.0/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
 
 # TIME_ZONE = 'UTC'
@@ -138,11 +132,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # ROD: About django.contrib.staticfiles installed apps
+# ROD: About django.contrib.staticfiles installed apps
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
