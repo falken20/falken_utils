@@ -98,6 +98,8 @@ DATABASES = {
 if HEROKU:
     DATABASES['default'] = os.getenv('DATABASE_URL')
 
+print(f'ROD: Databsa url: {DATABASES}')
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
