@@ -4,6 +4,7 @@
 import os
 from dotenv import load_dotenv  # Manage environment vars in .env file
 import dj_database_url  # For returning a Django database connection dictionary
+import django_heroku
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -17,7 +18,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # Heroku is a server web for running the app
 HEROKU = ('ENV' in os.environ and os.environ['ENV'] == 'PRO')
 
-print(f'ROD --> ENV: {HEROKU}')
+print(f'ROD --> ENV=PRO: {HEROKU}')
 
 if 'DEBUG' in os.environ:
     DEBUG = os.getenv('DEBUG')
@@ -86,7 +87,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'home_project.wsgi.application'
 
 DATABASES = {
-    'secondary': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'falken_homedb',
         'USER': 'falken_home',
@@ -94,7 +95,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '',
     },
-    'default': {
+    'secondary': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
@@ -143,3 +144,6 @@ STATICFILES_DIRS = [
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
