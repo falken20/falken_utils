@@ -3,6 +3,8 @@
 
 import os
 from dotenv import load_dotenv  # Manage environment vars in .env file
+import dj_database_url  # For returning a Django database connection dictionary
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -98,7 +100,7 @@ DATABASES = {
 
 # In production environment (in this case Heroku) it is necessary to change the DB url
 if HEROKU:
-    DATABASES['default'] = os.getenv('DATABASE_URL')
+    DATABASES['default'] = dj_database_url.config(default=os.getenv('DATABASE_URL'))
 
 print(f'ROD: Database url: {DATABASES["default"]}')
 
