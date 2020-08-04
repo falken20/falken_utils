@@ -13,7 +13,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'), override=True)
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # Heroku is a server web for running the app
-HEROKU = ('ENV' in os.environ and os.environ['ENV'] == 'heroku')
+HEROKU = ('ENV' in os.environ and os.environ['ENV'] == 'PRO')
 DEBUG = not HEROKU
 
 print(f'ROD Production Environment: {HEROKU}')
