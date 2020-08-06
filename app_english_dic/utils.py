@@ -23,7 +23,7 @@ def get_random_item(model):
     max_id = __get_max_id(model)
 
     #TODO: Change the print statement for Logging
-    logging.info(f'{os.getenv("ID_LOG", "")} Max ID in the DB: {max_id}')
+    logging.debug(f'{os.getenv("ID_LOG", "")} Max ID in the DB: {max_id}')
 
     # Looking for a valid id because the model has deletions
     while True and not max_id is None:
