@@ -4,6 +4,8 @@
 
 import pandas as pd
 import lxml
+import logging
+import os
 
 
 def scrap_web(url):
@@ -13,7 +15,9 @@ def scrap_web(url):
     """
     data = pd.read_html(url)
     df = data[0]
-    print('ROD url scrapping: ', data[0])
+
+    logging.info(f'{os.getenv("ID_LOG", "")} url scrapping: {url}')
+    logging.debug(f'{os.getenv("ID_LOG", "")} Data scrapping: {data[0]}')
 
     # Cleaning the info it doesn't neccesary
     df = df.drop([4], axis=1) # axis is the column name

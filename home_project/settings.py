@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv  # Manage environment vars in .env file
 import dj_database_url  # For returning a Django database connection dictionary
 import django_heroku
-
+import logging
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -13,17 +13,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Looking for .env file for environment vars
 load_dotenv(os.path.join(BASE_DIR, '.env'), override=True)
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY', default='')
 
 # Heroku is a server web for running the app
-HEROKU = ('ENV' in os.environ and os.environ['ENV'] == 'PRO')
+ENV_PRO = ('ENV_PRO' in os.environ and os.environ['ENV_PRO'] is True)
 
-print(f'ROD --> ENV=PRO: {HEROKU}')
+print(f'ROD --> ENV_PRO: {ENV_PRO}')
 
 if 'DEBUG' in os.environ:
     DEBUG = os.getenv('DEBUG')
 else:
-    DEBUG = not HEROKU
+    DEBUG = not ENV_PRO
 
 print(f'ROD --> DEBUG: {DEBUG}')
 
@@ -102,7 +102,7 @@ DATABASES = {
 }
 
 # In production environment (in this case Heroku) it is necessary to change the DB url
-if HEROKU:
+if ENV_PRO:
     DATABASES['default'] = dj_database_url.config(default=os.getenv('DATABASE_URL'))
 
 print(f'ROD --> DATABASES: {DATABASES["default"]}')
@@ -152,15 +152,41 @@ django_heroku.settings(locals())
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {filename} {funcName} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        }
+    },
     'handlers': {
-        'console': {
+        'console1': {
             'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'console2': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
         },
     },
     'loggers': {
+        # '' is root logger
+        '': {
+            'handlers': ['console1'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO').upper(),
+        },
         'django': {
-            'handlers': ['console'],
-             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+            'handlers': ['console2'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO').upper(),
         },
     },
 }
+
+logging.config.dictConfig(LOGGING)
+
+logging.info(f'{os.getenv("ID_LOG", "")} LOG LEVEL: {os.getenv("DJANGO_LOG_LEVEL", "INFO")}')
+
+
