@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
+import logging
+import os
+
 from .models import TodoItem
 
 
@@ -22,7 +25,7 @@ def add_todo(request):
 
 def delete_todo(request, todo_id):
     """Delete one todo task"""
-    print('ROD: Deleting the element with id=%s', todo_id)
+    logging.info(f'{os.getenv("ID_LOG", "")} Deleting the element with id=%s', todo_id)
     TodoItem.objects.get(id=todo_id).delete()
     # Redirect to the app_todo page
     return HttpResponseRedirect('/todo/')
