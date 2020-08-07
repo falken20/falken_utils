@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'english_dic/css/style.css' %}"> -->
+
+<!-- Rotating card -->
+<div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for element in books %}
+
+            <tr>
+                <td> {{ element.book_year }} </td>
+                <td> {{ element.book_title }} </td>
+                <td> {{ element.book_author }} </td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+<!-- Rotating card -->
+
+{% endblock content %}

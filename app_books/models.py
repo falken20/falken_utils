@@ -3,10 +3,11 @@ from django.db import models
 
 class AuthorItem(models.Model):
     """ Class for save the different authors. """
-    author_name = models.TextField()
+    author_name = models.TextField(max_length=30)
+    author_surname = models.TextField(max_length=60, default='', blank=True)
 
     def __str__(self):
-        return self.author_name
+        return f'{self.author_name} {self.author_surname}'
 
 
 class BookItem(models.Model):

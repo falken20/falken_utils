@@ -16,7 +16,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'), override=True)
 SECRET_KEY = os.getenv('SECRET_KEY', default='')
 
 # Heroku is a server web for running the app
-ENV_PRO = ('ENV_PRO' in os.environ and os.environ['ENV_PRO'] is True)
+ENV_PRO = ('ENV_PRO' in os.environ and os.environ['ENV_PRO'].upper() == 'Y')
 
 print(f'ROD --> ENV_PRO: {ENV_PRO}')
 
