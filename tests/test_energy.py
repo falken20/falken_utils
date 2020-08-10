@@ -8,7 +8,7 @@ import unittest
 import sys
 # Anexo el Directorio en donde se encuentra la clase a llamar
 sys.path.append('..')
-from src.energy import Energy
+from utils.energy import Energy
 
 
 class TestEnergy(unittest.TestCase):
