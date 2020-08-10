@@ -1,8 +1,8 @@
 # by Richi Rod AKA @richionline / falken20
 
-from src import __version__
-from src.utils import JSONUtils
-from src.energy import *
+from utils import __version__
+from utils.utils import JSONUtils
+from utils.energy import *
 import logging
 
 
