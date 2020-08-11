@@ -11,10 +11,10 @@ def get_auth_info_energy():
     Request for user and password variables to be able to login in energy company
     """
     try:
-        user = 'ricardorg20@gmail.com'  # os.environ["IBUSER"]
-        password = 'bXWkbuvnGF2YdsphK'  # os.environ["IBPASS"]
+        user = os.environ["ENERGY_USER"]
+        password = os.environ["ENERGY_PASS"]
     except KeyError:
-        print("You must to configure `IBUSER` and `IBPASS` to continue")
+        print("You must to configure environment vars `ENERGY_USER` and `ENERGY_PASS` to continue")
         sys.exit(-1)
     return user, password
 
