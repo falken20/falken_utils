@@ -11,6 +11,7 @@ from sqlalchemy import create_engine
 import dj_database_url  # For returning a Django database connection dictionary
 import csv
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 BOOKS_CSV_NAME = '../init_files_load/books.csv'
 BOOKS_DB_TABLE = 'app_books_bookitem'
@@ -109,5 +110,6 @@ if __name__ == '__main__':
 
     # About english words
     # load_csv_wordtypes()
-    load_csv_words()
+    # load_csv_words()
+    print(BASE_DIR)
 
