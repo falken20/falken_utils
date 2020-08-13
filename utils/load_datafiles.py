@@ -109,6 +109,6 @@ if __name__ == '__main__':
     # load_csv_books()
 
     # About english words
-    load_csv_wordtypes()
-    # load_csv_words()
+    # load_csv_wordtypes()
+    load_csv_words()
 
