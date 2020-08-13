@@ -1,0 +1,9 @@
+word_type_id,word_type
+Adv,Adverb
+Prep,Preposition
+Adj,Adjetive
+Verb_R,Regular Verb
+Sust,Noun
+Verb_I,Irregular Verb
+Pron,Pronoun
+Conj,Conjunction

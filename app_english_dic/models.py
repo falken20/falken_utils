@@ -3,18 +3,23 @@ from django.db import models
 
 class WordTypeItem(models.Model):
     """ Class for the different types of words: name, adjective, adverb, etc."""
+    word_type_id = models.CharField(primary_key=True, unique=True, max_length=10, null=False)
     word_type = models.TextField()
 
     def __str__(self):
-        return self.word_type
+        return f'{self.word_type} ({self.word_type_id})'
 
 
 class WordItem(models.Model):
     """ Class for word in english and spanish"""
-    word_en = models.TextField()
-    word_es = models.TextField()
-    word_type = models.ForeignKey(WordTypeItem, on_delete=models.PROTECT)
-    word_times = models.IntegerField(default=0)  # Times this word was shown
+    word_en = models.TextField(max_length=100)
+    word_es = models.TextField(max_length=100)
+    word_type = models.ForeignKey(WordTypeItem, on_delete=models.PROTECT, to_field='word_type_id')
+    word_times = models.IntegerField(default=0, null=True)  # Times this word was shown
+
+    @staticmethod
+    def word_times_default():
+        return 0
 
     class Meta:
         """ Model metadata is “anything that’s not a field”, such as ordering options (ordering),
