@@ -13,14 +13,14 @@ import csv
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-BOOKS_CSV_NAME = '../init_files_load/books.csv'
+BOOKS_CSV_NAME = os.path.join(BASE_DIR, 'init_files_load/books.csv')
 BOOKS_DB_TABLE = 'app_books_bookitem'
-AUTHORS_CSV_NAME = '../init_files_load/authors.csv'
-AUTHORS_DB_TABLE =  'app_books_authoritem'
+AUTHORS_CSV_NAME = os.path.join(BASE_DIR, 'init_files_load/authors.csv'
+AUTHORS_DB_TABLE = 'app_books_authoritem'
 
-WORDTYPES_CSV_NAME = '../init_files_load/wordtypeitem.csv'
+WORDTYPES_CSV_NAME = os.path.join(BASE_DIR, 'init_files_load/wordtypeitem.csv'
 WORDTYPES_DB_TABLE = 'app_english_dic_wordtypeitem'
-WORDS_CSV_NAME = '../init_files_load/worditem.csv'
+WORDS_CSV_NAME = os.path.join(BASE_DIR, 'init_files_load/worditem.csv'
 WORDS_DB_TABLE = 'app_english_dic_worditem'
 
 DATABASES = {
