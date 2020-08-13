@@ -1,0 +1,845 @@
+word_en,word_type_id,word_es
+aboard,Adv,a bordo; a bordo de (Prep.)
+about,Prep,"acerca de, respecto de, sobre"
+about,Adv,"aproximadamente, casi, más o menos, alrededor"
+abroad,Adv,en el extranjero
+accurate,Adj,"preciso, exacto, correcto"
+achieve,Verb_R,"lograr, conseguir, cumplir, realizar, alcanzar"
+acquaintance,Sust,conocido
+actually,Adv,"realmente, en realidad, =in fact"
+advice,Sust,"consejo, aviso"
+affectionate,Adj,cariñoso
+afraid,Adj,"asustado, atemorizado, temeroso <> unafraid: sin miedo"
+ahead,Adv,"por delante, antes que, al frente"
+aisle,Sust,pasillo
+all around,Adv,alrededor
+alley,Sust,callejon
+along,Prep,"a lo largo de, junto con"
+along,Adv,"adelante, junto, cerca"
+also,Adv,"también, además, así mismo"
+amaze,Verb_R,asombrar
+among,Prep,"en medio de, entre"
+anchor,Sust,"ancla, amarre, presentador"
+anger,Sust,"ira, furia"
+angry,Adj,enfadado
+annoy,Verb_R,"molestar, fastidiar"
+anyway,Adv,"de todos modos, de cualquier manera"
+appetizer,Sust,"aperitivo, tapa"
+apply,Verb_R,"aplicar, solicitar"
+appointment,Sust,"cita, nombramiento"
+approach,Verb_R,"acercarse, aproximarse"
+apron,Sust,"delantar, mandil"
+argue,Verb_R,"discutir, argumentar"
+argument,Sust,"argumento, discusión"
+armchair,Sust,sillón
+arrange,Verb_R,"organizar, ordenar, arreglar, disponer, planear, acordar, concertar"
+asleep,Adj,"dormido, durmiendo"
+assess,Verb_R,"evaluar, multar, tasar, gravar, calcular el valor de, contabilizar"
+assessment,Sust,"valoración, evaluación, tasación"
+asset,Sust,"activo, valor, bien"
+assignment,Sust,"encargo, tarea, asignación"
+attempt,Verb_R,"intentar, atentar, ensayar"
+attempt,Sust,"intento, ensayo, tentativa"
+auction,Sust,"subasta, remate"
+auction,Verb_R,"subastar, rematar"
+aunt,Sust,tía
+avoid,Verb_R,"evitar, bordear, eludir, esquivar, evadir, rehuir"
+aware,Adj,"consciente, darse cuenta, al tanto"
+awareness,Sust,"conciencia, conocimiento, apreciación, percepción"
+awful,Adj,"horrible, terrible"
+axe,Sust,"hacha, eje"
+bachelor,Sust,soltero
+background,Sust,"fondo, segundo plano, experiencia, antecedentes"
+baggage,Sust,"equipaje (incontable, no se usa plurarl, es igual que luggage)"
+bald,Sust,calvo
+ban,Verb_R,prohibir
+ban,Sust,prohibición
+bank,Sust,"banco, rivera, orilla"
+banned,Adj,prohibido
+bare,Verb_R,"mostrar, descubrir, desnudar"
+bare,Adj,"desnudo, descubierto, pelado, escaso"
+bargain,Sust,"chollo, ganga, ocasión"
+basement,Sust,sotano
+batter,Verb_R,"maltratar a golpes, golpear, apalear"
+batter,Sust,bateador
+battered,Adj,"maltratado, golpeado, estropeado, destrozado"
+bawled,Verb_R,"gritar, berrear, chillar"
+beard,Sust,barba
+beat,Verb_I,"golpear repetidamente (hit: golpear una vez), vencer"
+beauty,Sust,belleza
+because,Prep,"debido a, a causa de; porque (Conj)"
+beg,Verb_I,"pedir limosna, mendigar"
+beggar,Sust,mendigo
+behave,Verb_I,"comportarse, portarse"
+behavior,Sust,"comportamiento, actuación, conducta, funcionamiento, proceder"
+beloved,Adv,"amado, querido"
+bench,Sust,"banco sentarse, banqueta, banquillo, escaño"
+bend,Sust,curva
+beneath,Prep,"bajo, debajo de; debajo, abajo (Adv)"
+beware,Verb_R,tener cuidado
+bewilderment,Sust,"desconcierto, perplejidad"
+bin,Sust,"cubo, bote, contenedor (litter bin: papelera)"
+bistro,Sust,"casa de comidas, restaurante pequeño"
+bleed,Verb_I,sangrar
+block of the road,Sust,arcen
+bollocks,Sust,"cojones, chorradas"
+borough,Sust,"ciudad, municipio, barrio"
+borrow,Verb_R,"pedir prestado, tomar prestado"
+bother,Sust,"molestia, estorbo, fastidio, engorro, incordio"
+bother,Verb_R,"molestar, preoocuparse"
+bottlenose,Sust,delfín macho
+bound,Adj,obligado
+bound,Sust,"limite; botar, moverse dando saltos (Verb_R)"
+brace,Sust,abrazadera
+brace,Verb_R,"reforzar, apuntalar, atar"
+breathtaking,Adj,asombroso
+breed,Verb_I,"reproducirse, criar, cruzar, gestar"
+breeds,Sust,"tipo, raza, especie"
+briefcase,Sust,maletin
+bright,Adj,"listo, brillante, lucido"
+bring,Verb_I,traer
+brink,Sust,"orilla, borde, margen"
+broad,Adj,"ancho, amplio - broaden (Verb_R): ensanchar, ampliar"
+broadcast,Sust,"emisión, publicación, radiodifusión, reportaje"
+broadcast,Adj,"publicitado, radiado"
+broadcast,Verb_I,"transmitir, difundir, emitir, comunicar, dar publicidad a "
+broaden,Verb_R,"ensanchar, ampliar"
+brush,Sust,"cepillo, cepillar"
+bulb,Sust,bombilla
+bulky,Adj,"voluminoso, gigantesco"
+bump,Verb_R,"golpearse, chichón (Sust)"
+bunch,Sust,"racimo, lío, manojo, ramo, montón"
+bunch,Verb_R,"agrupar, apiñar, agruparse"
+bundle,Sust,"lote, bulto, agrupación"
+burglar,Sust,ladrón
+burst,Verb_I,"reventar, estallar; rafaga, explosión (Sust)"
+bust,Verb_R,"averiar, romper, estropear"
+bust,Adj,"arruinado, quebrado"
+cage,Sust,"jaula, alambrera, prisión"
+cage,Verb_R,enjaular
+callback,Sust,comunicación de vuelta
+calm,Verb_R,"calmar, tranquilizar"
+calm,Sust,"calma, tranquilidad"
+calm,Adj,"calmado, tranquilo"
+calming,Adj,"calmante, tranquilizante"
+carefree,Adj,despreocupado
+carry,Verb_R,llevar
+catch,Verb_I,"coger, atrapar, pillar"
+catchy,Adj,pegadizo
+chance,Sust,"oportunidad, ocasion, posibilidad, azar, casualidad"
+charge,Verb_R,"cobrar, cargar"
+charge,Sust,"carga, cobro"
+charity,Sust,"caridad, altruismo, beneficiencia"
+charm,Sust,"encanto, atractivo, carisma"
+cheeky,Adj,"atrevido, descarado, fresco"
+childhood,Sust,"infancia, niñez"
+chill,Sust,"escalofrio, frio"
+chill,Verb_R,"enfriar, refrigerar"
+cipher,Sust,"cifra, clave, código"
+cipher,Verb_R,"cifrar, codificar"
+claim,Verb_R,"reclamar, cobrar, demandar, exigir"
+claim,Sust,"reclamación, demanda, pretensión"
+clerk,Sust,"empleado, secretario, oficinista"
+climb,Sust,"subida, ascensión"
+clown,Sust,"payaso, bufón"
+clown,Verb_R,hacer el payaso
+cluttered,Adj,desordenado
+coatrack,Sust,perchero
+collapse,Verb_R,derrumbarse
+comforting,Adj,"reconfortante, confortador, consolador, aliviador"
+comfy,Adj,confortable
+commitment,Sust,compromiso
+compartment,Sust,compartimiento
+complain,Verb_R,"quejarse, reclamar"
+comply,Verb_R,"cumplir, consentir, compadecer, acceder, obedecer"
+compulsory,Adj,obligatorio
+concern,Verb_R,"concernir, atañer, incumbir, preocupar, competer a"
+concerned,Adj,"preocupado, ansioso, interesado, afectado, concernido"
+confident,Adj,"confiado, seguro"
+confident,Sust,"confidente, persona segura"
+constraint,Sust,"restricción, coacción, limitación"
+cope,Verb_R,"enfrentarse, hacer frente"
+core,Sust,"núcleo, centro, corazon, esencia"
+core,Verb_R,"quitar el corazón, observar lo del núcleo"
+cosy,Adj,acogedor
+couch,Sust,"sofa, canape"
+council,Sust,consejo
+courage,Sust,"valor, coraje, valentia"
+cousin,Sust,"primo, prima"
+cover,Sust,"cubierta, funda, portada, tapa, refugio, escondite"
+cover,Verb_R,"cubrir, forrar, tapar"
+craft,Sust,"arte, oficio, trabajo"
+cramp,Sust,"calambre, grapa; dar calambre (Verb_R)"
+cramped,Adj,"estrecho, apretado, menudo"
+craving,Sust,antojo
+cream,Sust,"crema, nata"
+cross,Adj,"enfadado (cruz (Sust), cruzar, atravesar (Verb_R))"
+crowd,Verb_R,"abarrotar, agolparse, llenar de gente, poblar"
+crowd,Sust,"multitud, manada, masa"
+crowded,Adj,"atestado, lleno de gente"
+cue,Sust,"pista, indicio, indirecta, taco, taco de billar"
+cue,Verb_R,"pasar la señal, dar la señal, indicar, hacer cola"
+cupboard,Sust,"armario, alacena"
+curb,Sust,bordillo
+curly,Adj,rizado
+currency,Sust,moneda
+currently,Adv,"actualmente, en este momento"
+cutlery,Sust,cubiertos
+damage,Sust,"daño, averia (cosas materiales); dañar, estropear (verb_R)"
+damn,Sust,"maldito, maldita sea"
+dare,Verb_R,"atreverse, osar; atrevimiento (Sust)"
+daring,Adj,atrevido
+deal,Sust,"trato, arreglo, reparto, acuerdo, negocio"
+deal,Verb_I,"negociar, repartir, dar, comerciar, asestar"
+dealership,Sust,concesión
+debris,Sust,escombros
+deck,Sust,"cubierta, baraja, plataforma, piso"
+deck,Verb_R,"embellecer, engalanar, ornamentar"
+deem,Verb_R,"considerar, estimar, juzgar"
+deep,Adj,profundo; depth(Sust): profundidad
+definitely,Adv,"definitivamente, sin lugar a dudas"
+degree,Sust,"grado, título"
+denim,Sust,"jeans, vaqueros"
+derail,Verb_R,descarrilar
+deserve,Verb_R,merecer
+despite,Prep,a pesar de
+dweller,Sust,"morador, habitante, residente"
+dice,Sust,dados
+dig,Verb_R,"cavar, excavar, remover"
+dine,Verb_R,cenar; dining: comida (Sust)
+disappointment,Sust,"decepción, desilusión"
+discourage,Verb_R,"desalentar, disuadir, desanimar"
+disease,Sust,"enfermedad, dolencia"
+disembark,Verb_R,desembarcar
+disgrace,Verb_R,"desgraciar, deshonrar, desgracia (Sust)"
+disgusting,Adj,"repugnante, asqueroso"
+disposable,Adj,desechable
+dive,Verb_R,"bucear; zambullido, chapuzon, clavado (Sust)"
+diver,Sust,"buzo, buceador"
+dizzy,Adj,"mareado, mareante"
+dock,Sust,"muelle, darsena, embarcadero, andén, banquillo acusados"
+dock,Verb_R,"ensamblar, atracar, atracar muelle"
+draft,Sust,"borrador, bosquejo, corriente de aire, diseño preliminar"
+draft,Verb_R,"preparar, hacer borrador, bosquejar, reclutar, forzar"
+draught,Sust,cerveza de barril
+drawer,Sust,"cajón, dibujante"
+drought,Sust,sequía
+drown,Verb_R,ahogarse
+duck,Sust,"pato, regate, capeada"
+duck,Verb_R,"evadir, eludir, esquivar, encubrirse"
+duckslins,Sust,patitos
+dull,Adj,"aburrido, torpe"
+dust,Verb_R,limpiar el polvo; polvo (Sust)
+dwarves,Sust,enanos
+dye,Verb_R,"teñir, colorar, pigmentar"
+dye,Sust,"tinte, colorante"
+eager,Adj,"ansioso, impaciente, entusiasmado, ardiente"
+ease,Sust,"facilidad, comodidad, desenfado, desembarazo"
+ease,Verb_R,"facilitar, aliviar, desahogar, simplificar, aflojar"
+eavesdrop,Verb_R,"escuchar a escondidas, fisgonear"
+eavesdropping,Sust,"espionaje, escuchas ilegales"
+edge,Sust,"borde, arista, canto, lado, margen, filo, reborde"
+edge,Verb_R,"bordear, afilar, avanzar ligeramente, orillar"
+edgy,Adj,"nervioso, inquieto"
+edible,Adj,comestible 
+effort,Sust,esfuerzo
+either,Adj,"cualquier, ambos, cada, cualquiera"
+either,Adv,tampoco
+either,Pron,"cualquiera, cualquiera de los dos"
+elderly,Sust,"anciano, mayor"
+embed,Verb_R,"incrustar, empotrar"
+encourage,Verb_R,"fomentar, alentar, animar, estimular, reforzar, incitar"
+endorse,Verb_R,"respaldar, promocionar, apoyar, endosar"
+engagement,Sust,"compromiso, cita, enlace, vinculo, encuentro"
+ensure,Verb_R,"asegurar, hacer seguro"
+entire,Adj,"entero, completo, total, integro"
+envelope,Sust,sobre
+escalator,Sust,escalera mecánica
+essay,Verb_R,"someter a prueba, probar, intentar"
+essay,Sust,"ensayo, composición"
+estate,Sust,"estado, finca, inmuebles"
+even,Adj,"parejo, allanado, igual, liso, llano, plano, par, constante, uniforme"
+even,Adv,"aún, hasta, incluso"
+even,Verb_R,"allanar, igualar, emparejar"
+ever,Adv,"nunca, jamas, alguna vez, siempre"
+everywhere,Adv,"en todas partes, donde quiera, por todas partes"
+excel,Verb_R,"sobresalir, aventajar"
+exhilarating,Adj,estimulante
+eyesore,Adj,"desagradable a la vista, monstruosidad"
+faint,Adj,"débil, desmayado; desmayado (Sust)"
+faint,Verb_R,desmayarse
+fairly,Adv,"bastante, justamente, completamente, limpio"
+fake,Adj,"falso (adj), falsificación (Sust), falsear (verb_R)"
+fall,Verb_I,caer
+fallen,Adj,"caido, deshonrado"
+fasten,Verb_R,"abrochar, sujetar, asegurar, amarrar"
+feature,Sust,"característica, rasgo, prestación, aspecto"
+feature,Verb_R,"ofrecer, constar, presentar, delinear"
+fee,Sust,"honorario, emolumento, retribución, arancel, tarifa, cargo"
+fee,Verb_R,"dar propina, retribuir"
+fence,Sust,"cerca, alambrada, cerco, valla, barda"
+fence,Verb_R,"cercar, acordonar, alambrar, amurallar, vallar, batirse espada"
+fetch,Verb_R,"ir a buscar, traer, extraer, venderse"
+fierce,Adj,"fiero, feroz"
+filthy,Adj,sucísimo
+fine,Verb_R,multar
+fine,Sust,multa
+fine,Adj,"bueno, hermoso, lindo, bello, bien"
+finny,Sust,aleta
+fit,Adj,"adecuado, acondicionado, listo, apto, ideal, en forma"
+fit,Sust,"ataque, ajuste, arrebato, espasmo, convulsión"
+fit,Verb_R,"encajar, caber, ajustar, acomodar, adaptar, adecuar"
+fit for,Adv,"adecuado para, apropiado para"
+fixed,Adj,"fijo, fijado, alzado"
+flask,Sust,frasco
+flaw,Verb_R,"agrietar, causar defecto, estropear"
+flaw,Sust,"desperfecto, defecto, imperfección, tara"
+flea,Sust,pulga
+fleet,Sust,"flota, escuadra, armada"
+fleet,Adj,veloz
+fleet,Verb_R,"pasear, moverse con rapidez, pasar rapidamente"
+float,Verb_R,"flotar, flotador (Sust)"
+flock,Sust,"rebaño, manada"
+flood,Verb_R,inundar
+flood,Sust,inundación
+foam,Sust,espuma
+fool,Sust,"tonto, idiota, necio, imbécil, memo, bufon"
+fool,Verb_R,"engañar, embaucar, bromear"
+foolish,Adj,"tonto, necio"
+footsteps,Sust,pasos
+forcibly,Adv,"forzadamente, a la fuerza, violentamente"
+fright,Sust,"susto, espanto"
+fulfill,Verb_R,"cumplir, realizar"
+fur,Sust,"piel, pelaje"
+furthermore,Adv,"además, más aún"
+gap,Sust,"hueco, cavidad, abertura, fisura, raja, intervalo, brecha"
+gather,Verb_R,"reunir, recoger, reunirse"
+gaze,Verb_R,mirar fijamente
+geeks,Sust,"empollon, loco por internet"
+gentle,Sust,"caballeroso, gentil, amable, afable"
+gentle,Verb_R,"domar, ser suave"
+gherkin,Sust,pepinillo
+girder,Sust,viga
+gleam,Verb_R,"brillar, resplandecer, relucir"
+gleam,Sust,"brillo, resplandor, destello"
+glide,Verb_R,"deslizarse, planear"
+glittering,Adj,reluciente
+glue,Sust,"pegamento; pegar, encolar (Verb_R)"
+goatee,Sust,perilla
+golden,Adj,"dorado, de oro"
+gossip,Sust,chismes
+grab,Verb_R,"agarrar, apresar, agarrar fuertemente, arrebatar"
+grab,Sust,robo con asalto
+grant,Verb_R,"conceder, otorgar"
+grant,Sust,"beca, subvención"
+greedy,Adj,"codicioso, glotón"
+greet,Verb_R,"saludar, dar la bienvenida, recibir"
+grimy,Adj,"mugriento, sucio, puerco"
+grind,Verb_I,"moler, picar, afilar, pulverizar"
+grind,Sust,"trabajo monotono, trabajo pesado"
+grip,Verb_R,"agarrar, empuñar"
+groceries,Sust,"comestibles, ultramarinos"
+grow,Verb_I,"crecer, cultivar"
+grumble,Verb_R,"refunfuñar, quejarse"
+guess,Verb_R,"adivinar, suponer"
+guess,Sust,"adivinanza, conjetura, suposición, presunción"
+haggle,Verb_R,regatear
+hail,Verb_R,"saludar, llamar taxi u otro transporte; saludo, granizo (Sust)"
+half,Sust,mitad
+halve,Verb_R,"dividir en dos, partir en dos, partir por la mitad, reducir a la mitad"
+hand,Verb_R,"entregar, poner en mano de"
+handful,Sust,"puñado, manojo"
+handsome,Adj,"guapo, hermoso, atractivo"
+handy,Adj,"útil, practico, =useful"
+hang,Sust,caída
+hang,Verb_R,"colgar, ahorcar, suspender, caer, pender"
+hangout,Sust,"lugar de reunión, guarida, cuartel general"
+hangover,Sust,resaca
+harm,Sust,"daño, perjuicio, mal"
+harm,Verb_R,"dañar, perjudicar, estropear"
+harmless,Adj,inofensivo
+harsh,Adj,"duro, severo, riguroso"
+harshly,Adv,"severamente, duramente, injustamente, cruelmente"
+haunting,Adj,obsesionante
+head,Verb_I,"encabezar, liderar, guiar, capitanear, dirigir"
+heavenly,Adj,"celestial, paradisiaco"
+helmet,Sust,"casco, chichonera"
+hilly,Adj,montañoso
+hire,Verb_R,"contratar, alquilar"
+hit,Verb_R,golpear una vez (beat: golpear varias veces)
+hitchhike,Verb_R,hacer autostop
+hoover,Sust,aspiradora
+horn,Sust,"cuerno, trompa"
+hose,Sust,manguera
+hostage,Sust,"rehén, secuestrado"
+hostess,Sust,"anfitriona, azafata"
+hurt,Verb_I,"herir, dañar, causar dolor"
+hurt,Sust,"daño, herida, lesión"
+hurt,Adj,"dañado, lastimado, ofendido"
+idle,Adj,"ocioso, desocupado, parado"
+idle,Verb_R,"holgazanear, gandulear"
+improve,Verb_R,"mejorar, progresar, avanzar"
+in advance,Adv,por adelantado
+in fact,Adv,de hecho
+increase,Verb_R,"aumentar, incrementar"
+increasing,Adj,creciente
+increasingly,Adv,"cada vez más, aceleradamente, más y más, progresivamente"
+inherit,Verb_R,heredar
+injure,Verb_R,"lesionar, herir"
+inner,Adj,interior
+inquiry,Sust,"investigación, indagación, pregunta, examen"
+inside,Prep,"dentro, dentro de, en el interior"
+instead,Adv,"en cambio, en vez de, preferiblemente, en lugar de, más bien"
+insurance,Sust,seguro
+intend,Verb_R,"pretender, proponerse, proyectar, intentar"
+intended,Adj,"pretendido, deseado"
+introduce,Verb_R,"presentar, introducir, dar a conocer"
+involve,Verb_R,"involucrar, conllevar, suponer, implicar"
+isolate,Verb_R,"aislar, aislarse, apartar"
+isolated,Adj,aislado
+issue,Sust,"asunto, cosa, cuestión, tema, problema"
+issue,Verb_R,"publicar, emitir, expedir"
+jumper,Sust,"jersey, sueter"
+junk,Sust,"basura, porquería"
+just,Adv,"solo, justo, apenas, justo (Adj)"
+kennel,Sust,perrera
+kidnapper,Sust,secuestrador
+kind,Sust,"tipo, categoria, clase, especie"
+kind,Adj,"amable, afable, afectuoso, atento, bondadoso"
+knot,Verb_R,"anudar, atar, amarrar"
+knot,Sust,"nudo, lazo, amarre"
+lack,Sust,"falta, ausencia"
+ladder,Sust,escalera
+lagging,Sust,"retraso, atraso, protección de cañeria"
+lagging,Adj,"rezagado, lento, tardio, subdesarrollado"
+laidback,Adj,relajado
+land,Verb_R,"aterrizar, tomar tierra, desembarcar"
+landlady,Sust,"dueña, propietaria de vivienda, ama"
+last,Verb_R,"durar, perdurar"
+layer,Sust,"capa, estrato"
+layout,Sust,"disposición, plano"
+lazy,Adj,"perezoso, gandul, parado"
+laziness,Sust,pereza
+leaf,Verb_I,"hojear, echar hojas"
+leaf,Sust,"hoja, follaje, pagina"
+leak,Verb_R,"escaparse, filtrarse, gotear"
+leak,Sust,"escape, fuga, gotera"
+leap,Sust,"salto, brinco; saltar (Verb_R)"
+leaves,Sust,"permiso ausencia, licencia / hojas (Plural de leaf)"
+ledge,Sust,"repisa, saliente"
+legends,Sust,subtitulos
+leisure,Sust,"ocio, libre, tiempo libre"
+lend,Verb_I,prestar
+liftoff,Sust,despegue
+likely,Adv,"probablemente, probable (Adj)"
+litter,Sust,basura
+lizard,Sust,"lagarto, lagartija, salamanquesa"
+loaf,Verb_I,"vaguear, holgazanear, gandulear"
+loaf,Sust,"hogaza, barra de pan, pan de molde"
+loan,Verb_R,prestar; prestamo (Sust)
+loaves,Sust,"barras de pan, hogazas (Plural de loaf)"
+lonely,Adj,"solitario, solo"
+lower,Adj,inferior
+lower,Verb_R,bajar
+loyal,Adj,"leal, caballero, fiel, noble"
+luggage,Sust,"equipaje (incontable, no se usa plurarl, es igual que baggage)"
+machinery,Sust,"maquinaria, mecanismo, sistema, organización"
+madcap,Sust,"loco, zopenco, atolondrado"
+maid,Sust,"criada, doncella"
+mamals,Sust,mamiferos
+manage,Verb_R,"conseguir (hacer algo), gestionar, administrar"
+mandatory,Adj,obligatorio
+match,Verb_R,"igualar, emparejar"
+mate,Sust,"tio, compañero"
+matter,Verb_R,importar
+matter,Sust,"asunto, materia"
+mean,Verb_I,"significar, querer decir, dar a entender, tratar de decir"
+mellow,Adj,meloso
+mess,Sust,"desorden, caos, lio"
+messy,Adj,"desordenado, desaliñado, desarreglado, descuidado, confuso"
+mild,Adj,"suave, templado"
+mince,Sust,carne picada
+misspell,Sust,"falta ortografía, error ortográfico"
+misspell,Verb_R,"escribir mal, deletrear mal, escribir con mala ortografía"
+mop,Sust,fregona; fregar (Verb_R)
+moreover,Adv,"por otra parte, además"
+mortgage,Sust,hipoteca
+motion,Verb_R,"indicar con la mano, hacer señales"
+motion,Sust,"movimiento, locomocion, marcha, propuesta, gesto, señal"
+motionless,Adj,"inmovil, parado"
+mould,Sust,moho
+mud,Sust,"barro, fango, lodo"
+muddy,Adj,"embarrado, fangoso"
+mugger,Sust,atracador
+muster,Sust,"reunión, asamblea (preparar batalla)"
+nappies,Sust,pañales
+narrow,Verb_R,reducir
+narrow,Adj,estrecho
+naughty,Adj,"travieso, pícaro"
+nearly,Adv,"casi, apenas, aproximadamente, escasamene, por poco, mas o menos"
+needy,Adj,necesitado
+nephew,Sust,sobrino
+nest,Sust,"nido, madriguera; anidar (Verb_R)"
+never,Adv,"nunca, jamas"
+nevertheless,Adv,"sin embargo, aún así"
+niece,Sust,sobrina
+noisy,Adj,"ruidoso, chillón"
+noon,Sust,mediodía
+nosy,Adj,"fisgón, entrometido, curioso"
+notice,Sust,"nota, aviso, atención, anuncio, noticia, esquela"
+notice,Verb_R,"notar, observar, advertir, fijarse, percatarse, perdibir"
+nowadays,Adv,"actualmente, hoy en día"
+nuts,Sust,"fruto seco, nuez"
+oar,Sust,remo; remar (Verb_R)
+odd,Adj,"impar, extraño, raro"
+order,Verb_R,"pedir, encargar"
+order,Sust,"orden, pedido"
+otherwise,Adv,"de otra manera, por lo demás, por otra parte"
+otherwise,Conj,si no
+out of,Prep,"de, por, fuera de, de entre"
+outcome,Sust,"resultado, desenlace"
+outgoing,Adj,"sociable, extrovertido, saliente"
+outline,Sust,"contorno, perfil, silueta, boceto, diseño"
+outline,Verb_R,"delinear, esbozar, perfilar, bosquejar, hacer un borrador de"
+overcome,Verb_I,"vencer, derrotar, doblegar, superar, sobreponerse a"
+overload,Sust,sobrecarga
+overload,Verb_R,"sobrecargar, sobrefatigar"
+overview,Sust,"visión general, visión de conjunto, vistazo general, vistazo"
+owe,Verb_R,"adeudar, deber, tener deudas"
+owing,Adj,"debido, que se debe"
+owl,Sust,"buho, lechuza"
+pack,Verb_R,"empaquetar, llenar"
+parachute,Sust,paracaidas
+parents,Sust,padres
+partner,Sust,socio
+path,Sust,"camino, sendero, trayectoria"
+paw,Sust,"pata, zarpa, garra"
+peacemaker,Sust,pacificador
+peek,Verb_R,"dar un vistazo, ojear, atisbar"
+peek,Sust,"vistazo, ojeada"
+peel,Verb_R,"pelar, mondar"
+peer,Sust,"par, igual"
+peer,Verb_R,"mirar, mirar con atención, entornar las ojos"
+penknife,Sust,navaja
+perform,Verb_R,"realizar, actuar, interpretar"
+pickpocket,Sust,carterista
+pier,Sust,"muelle, embarcadero"
+pier,Sust,"muelle, embarcadero"
+plain,Adj,"claro, evidente, simple; llanura (Sust)"
+platform,Sust,"andén, plataforma"
+plenty,Sust,abundancia
+plenty,Adj,"suficiente, abundante"
+plenty,Adv,"mucho, más que, muy"
+plot,Verb_R,"tramar, conspirar"
+plot,Sust,argumento
+plunder,Verb_R,"desvalijar, saquear; plundering: saqueo"
+pole,Sust,"polo (ropa), poste, palo"
+polite,Adj,"cortes, atento, correcto"
+porpoises,Sust,marsopa
+pour,Verb_R,"derramar, verter"
+pram,Sust,"cochecito, cochecito de bebe"
+prawn,Verb_R,"pescar camarones, gambas"
+prawn,Sust,"gamba, camarón, langostino"
+pride,Sust,orgullo
+proof,Sust,prueba
+proof,Adj,a prueba de
+propietary,Sust,"propiedad, propietarios"
+propietary,Adj,"propietario, de propiedad, privado, patentado"
+propose,Verb_R,"proponer, plantear, pedir la mano, brindar por"
+prove,Verb_R,"probar, confirmar, comprobar, demostrar, poner a prueba"
+puddle,Sust,charco
+pull,Verb_R,tirar de
+punish,Verb_R,"castigar, sancionar"
+punishment,Sust,"castigo, pena"
+purchase,Sust,"compra, adquisicion"
+purchase,Verb_R,"comprar, adquirir, conseguir"
+purpose,Sust,"proposito, objetivo, finalidad"
+push,Verb_R,"empujar, presionar, apretar, obligar, pisar"
+quaint,Adj,pintoresco
+queue,Sust,"cola, hacer cola"
+quite,Adv,"bastante, absolutamente, completamente"
+quit,Verb_R,"dejar, abandonar, despedirse del trabajo sin avisar"
+quiz,Sust,"examen, prueba, cuestionario, encuesta"
+quiz,Verb_R,"interrogar, burlarse, mirar con aire burlón"
+raft,Sust,balsa
+rag,Sust,"trapo, harapo, jiron"
+rag,Verb_R,"tomar el pelo, pinchar (de chinchar), provocar"
+raise,Verb_R,"elevar, levantar, criar (<> rise) (Ej.: The boss raises your salary)"
+raise,Sust,"aumento, incremento"
+rape,Sust,violación
+rare,Adj,"raro, excepcional, inusual, extraño, crudo, a medio cocer"
+rather,Adv,"más bien, bastante, preferiblemente, mejor dicho, antes"
+razor,Sust,"navaja de afeitar, maquinilla de afeitar"
+reach,Verb_R,"llegar, alcanzar"
+react,Verb_R,reaccionar
+realize,Verb_R,"realizar, darse cuenta de, entender, hacerse cargo de"
+reason,Sust,"razón, motivo, causa, explicación"
+reason,Verb_R,"razonar, concluir, discurrir, calcular"
+receipt,Sust,recibo
+reconcile,Verb_R,"reconciliar, conciliar, arreglarse"
+reconciliation,Sust,"conciliacion, reconciliación"
+reef,Sust,arrecife
+regard,Verb_R,"considerar, observar, contemplar"
+regard,Sust,"consideración, estima, aprecio, saludos (regards)"
+regret,Verb_R,arrepentirse
+relative,Sust,"pariente, allegado, relativo (Adj)"
+reliable,Adj,"seguro, de confianza, cumplidor, responsable"
+relief,Sust,alivio
+relieve,Verb_R,aliviar
+rely,Verb_R,"confiar, depender"
+remain,Verb_R,"permanecer, quedarse"
+remember,Verb_R,"acordarse de, recordar"
+remind,Verb_R,recordar a alguien
+remnants,Sust,"remanente, resto"
+request,Sust,"solicitud, petición, demanda, instancia, requerimiento"
+request,Verb_R,"solicitar, pedir, recabar, rogar"
+research,Verb_R,"investigar, investigación (Sust)"
+resign,Verb_R,"renunciar, dimitir, abandonar"
+restless,Adj,"travieso, inquieto"
+resume,Verb_R,"reanudar, continuar, resumir"
+retain,Verb_R,"retener, conservar, guardar, quedarse con"
+retirement,Sust,"retiro, jubilación"
+rise,Verb_R,"subir, ascender (Ej.: The sun rises)"
+rise,Sust,"aumento, subida"
+rollout,Sust,"lanzamiento, despliegue"
+roof,Sust,"techo, tejado"
+rope,Sust,"cuerda, soga; atar con una cuerda (Verb_R)"
+rough,Adj,"aspero, desigual"
+rucksack,Sust,mochila
+rude,Sust,"rudo, descortes, grosero - rudeness (sust)"
+rug,Sust,"alfombra, alfombrilla, tapete"
+rust,Verb_R,"oxidarse, corroerse"
+rust,Sust,"oxido, sarro, corrosión"
+rusty,Adj,"oxidado, anticuado"
+sand,Sust,arena
+scam,Sust,estafa
+scar,Sust,cicatriz
+scenery,Sust,paisaje
+scold,Verb_R,regañar; regañona (sust)
+scope,Sust,"alcance, ambito"
+scramble,Verb_R,"mezclar, batir"
+scramble,Sust,"lucha, desorden, camino dificil, tumulto"
+screw,Verb_R,"atornillar, roscar"
+screw,Sust,tornillo
+screwdriver,Sust,destornillador
+scrutiny,Sust,"escrutinio, examen profundo"
+secondly,Adv,en segundo lugar
+seek,Verb_I,"buscar, solicitar, pedir, procurar"
+seeker,Sust,buscador
+shake,Verb_I,"agitar, sacudir"
+shallow,Adj,"superficial, poco profundo"
+shame,Sust,verguenza
+sharp,Adj,"afilado, agudo, apuntado"
+sharpen,Verb_R,afilar
+shelf,Sust,"estante, estantería / shelves: estanterias"
+shift,Sust,"cambio, movimiento, variación, turno"
+shift,Verb_R,"cambiar, pasar, desplazarse, moverse, transladarse"
+shining,Adj,"brillante, radiante"
+shipwreck,Sust,"naufragio, hundimeinto; hacer naufragar (Verb_R)"
+shore,Sust,orilla
+shorten,Verb_R,"acortar, reducir"
+shout,Verb_R,gritar
+shuttle,Verb_R,"transbordar, transladar; lanzadera, plataforma (Sust)"
+simpathy,Sust,simpatia
+sink,Sust,"fregadero, lavabo"
+sink,Verb_I,"hunfir, hundirse"
+sitter,Sust,"cuidador (babysitter, petsitter,...)"
+skeleton,Adj,"esquelético, reducido, básico, mínimo"
+skeleton,Sust,"esqueleto, estructura, armazon, esquema"
+skill,Sust,"habilidad, destreza"
+slam,Verb_R,cerrar de golpe; portazo (Sust)
+sleeve,Sust,manga
+slide,Verb_I,"resbalarse, deslizarse (slide-slid-slid)"
+slim,Verb_R,adelgazar
+slim,Adj,"delgado, esbelto"
+slippy/slippery,Adj,resbaladizo
+smack,Verb_R,golpear
+smart,Adj,"inteligente, elegante, habil, listo"
+snap,Sust,"chasquido, estallido, golpe seco; chasquear (Verb_R)"
+soak,Verb_R,"remojar, empapar"
+sober,Adj,"sobrio, serio"
+solely,Adv,"solamente, exclusivamene, únicamente"
+somehow,Adv,"de alguna manera, de algún modo"
+somewhat,Adv,"algo, algún tanto, en tanto"
+soothing,Adj,"calmante, tranquilizador"
+sort,Sust,"tipo, clase, especie, genero, naturaleza"
+sort,Verb_R,"clasificar, ordenar, barajar, poner en orden"
+sour,Verb_R,"agriar, amargar"
+sour,Adj,"agrio, amargo, rancio"
+spare,Adj,"de repuesto, libre; escatimar, ahorrar (Verb_R)"
+spark,Sust,"chispa, chispazo"
+spawn,Verb_R,"desovar, engendrar, generar"
+spawn,Sust,"huevas, prole, semillas"
+spill,Verb_R,"derramar, verter (spilt-spilt); vertido (Sust)"
+splurge,Sust,derroche; derrochar dinero (Verb_R)
+spoil,Verb_R,"estropear, arruinar, echar a perder"
+spot,Verb_R,manchar
+spot,Sust,"mancha, lugar, sitio"
+spotless,Adj,"muy limpio, inmaculado"
+spread,Verb_R,"difundir, extender, propagar, untar (spread-spread- spread)"
+spring,Sust,"primavera, fuente"
+squash,Verb_R,aplastar
+stagger,Verb_R,"tambalearse, ir haciendo eses"
+stall,Sust,"puesto, casilla, tenderete, pesebre, banco iglesia, butaca"
+stall,Verb_R,"quedar atascado, atascarse, encallarse, vararse, encenagarse"
+stallholder,Sust,tendero puesto
+stand,Verb_I,"estar de pie, ponerse de pie, aguantar, resistir"
+stand,Sust,"puesto, posición, postura"
+stare,Verb_R,mirar fijamente
+state,Verb_R,"declarar, manifestar, exponer, presentar, enunciar"
+steam,Sust,"vapor; de vapor (Adj); cocer al vapor, echar vapor (Verb_R)"
+stick,Sust,"palo, bastón, barra, estaca, madero, garrote"
+stick,Verb_I,"pegar, pegarse, adherirse, poner, clavar, plantarse"
+stir,Verb_R,remover
+stock,Sust,"caldo, valores, stock"
+straight,Adj,"recto, derecho"
+straighten,Verb_R,enderezar
+straightforward,Adj,"honesto, honrado, franco, directo, sincero"
+stream,Sust,"corriente, arroyo, riachuelo"
+stress,Sust,"estrés, tensión, esfuerzo, presión"
+stress,Verb_R,"subrayar, recalcar, acentuar, poner enfasis"
+strike,Verb_I,"golpear, atacar; huelga (Sust)"
+stripes,Sust,rayas
+stroll,Verb_R,"dar un paseo, pasear, darse una vuelta"
+stroll,Sust,"paseo, vuelta"
+struggle,Sust,"lucha; luchar, forcejear (Verb_R)"
+stuff,Verb_R,"meter, empacar, taponar, rellenar, abarrotar"
+stuff,Sust,"cosa, chisme, materia"
+stunning,Adj,"abrumador, imponente, despampanante"
+stylish,Adj,"elegante, con estilo"
+subject,Sust,"sujeto, tema, asunto, asignatura, caso"
+subject,Adj,sometido
+subject,Verb_R,"someter, sojuzgar, dominar"
+succeed,Verb_R,"tener exito, triunfar"
+such,Pron,"tal, tales, que"
+such,Adj,"tal, semejante, parecido"
+such,Adv,tan
+sudden,Adj,"repentino, rápido"
+suit,Verb_R,"satisfacer, venir bien, corresponder, agradar, complacer"
+suit,Sust,"traje, vestido, acción judicial, pleito, conjunto"
+suitable,Adj,"adecuado, apropiado"
+suitcase,Sust,"maleta (contable, puedes usar plural no como en baggage o luggage)"
+sulky,Adj,"malhumorado, mohino"
+surround,Verb_R,"rodear, circundar"
+survey,Sust,"encuesta, inspección, reconocimiento, examinar"
+swallow,Verb_R,"tragarse, tragar, engullir"
+swan,Sust,cisne
+swap,Sust,"trueque, cambio, canje"
+swap,Verb_R,"intercambiar, alternar, canjear, permutar, hacer intercambio"
+swear,Verb_I,"jurar, prometer, maldecir"
+sweat,Verb_R,sudar
+sweat,Sust,sudor
+sweep,Verb_I,barrer (swept-swept)
+swerve,Sust,"viraje; virar, cambiar de dirección (Verb_R)"
+tails,Sust,colas
+take,Verb_I,"tomar, llevar, coger"
+tamper,Verb_R,"manipular, estropear, entremeterse"
+tan,Sust,"bronceado; broncearse (Verb_R); marron, canela (Adj)"
+tantalize,Verb_R,"atormentar, torturar, tentar, seducir"
+tantalizing,Adj,"seductor, tentador, prometedor"
+tap,Sust,grifo
+target,Sust,"objetivo, blanco"
+taste,Verb_R,probar (food or drink)
+taste,Sust,"gusto, sabor"
+tasty,Adj,sabroso
+tear,Verb_I,"rasgar, desgarrar; rasgon, lagrima (Sust)"
+tempt,Verb_R,"tentar, seducir, dar ganas a, ser tentador"
+tempting,Adj,"tentador, apetecedor, apetecible"
+tend,Verb_R,"tender, ser propenso a"
+tenth,Sust,"décima, diezmo"
+tenth,Adj,décimo
+thick,Adj,grueso
+threat,Sust,"amenaza, sera advertencia"
+threaten,Verb_R,amenazar
+thrill,Verb_R,"emocionar, estimular; emoción, escalofrio (Sust)"
+throughout,Adv,"en todas partes, por todas partes, todo el tiempo"
+throughout,Prep,"a través de, durante todo, a lo largo de"
+thumbs,Sust,pulgares
+tide,Sust,marea
+tidy,Adj,"ordenado, limpio"
+tidy,Verb_R,"poner en orden, arreglar, ordenar, limpiar"
+tie,Sust,"corbata, lazo, vinculo, atadura"
+tie,Verb_R,"atar, amarrar, juntar, unirse"
+tied,Adj,"atado, amarrado"
+tier,Sust,"fila, grada, nivel, planta, piso"
+tightly,Adv,"estrechamente, apretadamente"
+tiny,Adj,"diminuto, pequeñito"
+tip,Verb_R,dar propina
+tip,Sust,propina
+tipsy,Adj,"achispado, piripi"
+toggle,Sust,"palanca, rotula, cabilla"
+toggle,Verb_R,"sujetar con cabilla, alternar"
+toll,Sust,"peaje, cuota"
+topic,Sust,"tema, asunto"
+torch,Sust,"linterna, antorcha"
+touching,Adj,"conmovedor, emocionante"
+towards,Prep,"hacia, para"
+trader,Sust,"comerciante, traficante, vendedor"
+trap,Sust,trampa; atrapar (Verb_R)
+tray,Sust,"bandeja, cubeta"
+treat,Verb_R,tratar
+trend,Sust,tendencia; tender a (Verv_R)
+trial,Sust,"juicio, ensayo, de prueba (Adj)"
+tricky,Adj,"complicado, dificil, tramposo"
+trouble,Sust,problema
+trousers,Sust,pantalones
+ugly,Adj,"feo, asqueroso, inquietante"
+uncle,Sust,tío
+undertake,Verb_I,"emprender, abordar, acometer, encargarse"
+undertaken,Adj,"realizado, llevado a cabo"
+unkind,Adj,"cruel, poco amable"
+unlike,Adj,"diferente, distinto, dispar"
+unlike,Prep,diferente a
+upon,Prep,"sobre, a, encima de"
+upside down,Adv,al revés
+useful,Adj,"útil, conveniente, provechoso, usable, aprovechable"
+vacuum,Sust,"vacío, aspirador; pasar aspiradora (Verb_R)"
+vase,Sust,"jarrón, florero"
+vengeful,Adj,"vengativo, vengador"
+vest,Verb_R,"otorgar, investir"
+vest,Sust,chaleco
+vivacious,Adj,"lleno de vida, alegre, vivaracho, vivaz"
+wage,Sust,"salario, paga, jornal, sueldo"
+wage,Verb_R,"empeñar, emprender, iniciar"
+wake,Sust,"velatorio, estela"
+wake,Verb_I,"despertar, despertarse, velar"
+wanderer,Sust,"peregrino, cazafortunas, vagabundo"
+wardrobe,Sust,armario (closet en UK)
+warn,Verb_R,"advertir, avisar"
+wary,Adj,"cauteloso, cauto"
+waste,Verb_R,"consumir, desaprovechar, malgastar, dilapidar, devastar"
+waterfall,Sust,cascada
+waterfront,Sust,"frente al mar, litoral"
+wavy,Adj,ondulado
+weak,Adj,débil
+weed,Sust,"mala hierba, maleza; eliminar, desherbar (Verb_R)"
+weird,Adj,extraño
+well,Sust,"fuente, pozo, manantial"
+whenever,Adv,"cuando quiera, cuantas veces, siempre que, cuando"
+whether,Conj,"si, tanto (como)"
+whisper,Verb_R,susurrar; susurro (Sust)
+whole,Adj,"todo, entero, total, integro, intacto, ileso"
+whole,Sust,"conjunto, totalidad, el todo"
+wide,Adj,ancho; width(Sust): anchura
+widen,Verb_R,ensanchar
+will,Sust,"voluntad, testamento"
+will,Verb_R,"querer, lograr por fuerza de voluntad, legar, dejar en testamento"
+willing,Adj,"de buena voluntad, dispuesto a, complaciente"
+wipe,Verb_R,"limpiar, pasar un trapo"
+wisdom,Sust,"sabiduria, saber"
+wise,Adj,sabio
+withdraw,Verb_I,"retirar, extraer, substraer, sustraer, remover"
+witness,Sust,testigo
+wonder,Sust,maravilla
+wonder,Verb_R,"preguntarse, desear saber"
+workout,Sust,entrenamiento
+workshop,Sust,taller
+worth,Adj,"que vale la pena, digno, meritorio"
+worth,Sust,"valor, merito, el valer"
+wound,Sust,"herida, lesión; herir (Verb_R)"
+wrap,Sust,"envoltura, chal, manto"
+wrap,Verb_R,"envolver, abrigarse, embalar, enrollarse, plegarse"
+wreck,Verb_R,"arruinar, hundir; naufragio, ruina (Sust)"
+yard,Sust,"yarda, patio; acorralar (Verb_R)"
+yawn,Verb_R,bostezar
+yawn,Sust,"bostezo, aburrimiento"
