@@ -19,6 +19,8 @@ def card_view(request):
     template_name = 'english_dic/cards.html'
     queryset = get_random_item(WordItem)
 
+    # TODO: Increase the field word_times
+
     return render(request, template_name, {'worditem': queryset})
 
 
