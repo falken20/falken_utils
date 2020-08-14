@@ -17,10 +17,6 @@ class WordItem(models.Model):
     word_type = models.ForeignKey(WordTypeItem, on_delete=models.PROTECT, to_field='word_type_id')
     word_times = models.IntegerField(default=0, null=True)  # Times this word was shown
 
-    @staticmethod
-    def word_times_default():
-        return 0
-
     class Meta:
         """ Model metadata is “anything that’s not a field”, such as ordering options (ordering),
         database table name (db_table), or human-readable singular and plural names (verbose_name and
