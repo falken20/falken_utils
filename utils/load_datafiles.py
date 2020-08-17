@@ -191,6 +191,8 @@ def load_csv_books():
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
 
+    print('************ INITIAL CHARGES UTILITY ************')
+
     # Create the engine instance "<dbms>://<username>:<password>@<hostname>:<port>/<db_name>"
     db = DATABASES['default']
     url_db = f'postgres://{db["USER"]}:{db["PASSWORD"]}@{db["HOST"]}:{db["PORT"]}/{db["NAME"]}'
@@ -198,9 +200,11 @@ if __name__ == '__main__':
     engine = create_engine(url_db)
 
     # About english words
+    print('\n****** ENGLISH / SPANISH WORDS ******')
     load_csv_wordtypes() if input('Load word types? (Y/n)') == 'Y' else print('Skipping load word types')
     load_csv_words() if input('Load english words? (Y/n)') == 'Y' else print('Skipping load english words')
 
     # About Books
+    print('\n****** BOOKS ******')
     load_csv_authors() if input('Load book authors? (Y/n)') == 'Y' else print('Skipping load book authors')
     load_csv_books() if input('Load books? (Y/n)') == 'Y' else print('Skipping load books')
