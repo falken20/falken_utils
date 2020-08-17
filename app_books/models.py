@@ -7,7 +7,10 @@ class AuthorItem(models.Model):
     author_surname = models.TextField(max_length=60, default='', blank=True, null=True)
 
     def __str__(self):
-        return f'{self.author_name} {self.author_surname}'
+        if not self.author_surname:
+            return f'{self.author_name}'
+        else:
+            return f'{self.author_name} {self.author_surname}'
 
 
 class BookItem(models.Model):
