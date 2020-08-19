@@ -25,4 +25,4 @@ class WordItem(models.Model):
         verbose_name_plural = "English/Spanish Words"
 
     def __str__(self):
-        return self.word_en + ' - ' + self.word_es
+        return f'{self.word_en}-{self.word_es} / {self.word_type} --> {self.word_times}'

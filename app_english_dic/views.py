@@ -17,9 +17,12 @@ def card_view(request):
     logging.info(f'{os.getenv("ID_LOG", "")} Number of words in the DB: {count_words}')
 
     template_name = 'english_dic/cards.html'
-    queryset = get_random_item(WordItem)
-
-    # TODO: Increase the field word_times
+    queryset = None
+    if count_words != 0:  # If the table is not empty
+        queryset = get_random_item(WordItem)
+        # Increase the number of times it appears
+        queryset.word_times += 1
+        queryset.save()
 
     return render(request, template_name, {'worditem': queryset})
 
