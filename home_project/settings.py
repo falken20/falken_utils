@@ -105,6 +105,12 @@ DATABASES = {
 if ENV_PRO:
     DATABASES['default'] = dj_database_url.config(default=os.getenv('DATABASE_URL'))
 
+# If the application is in a dev environment without PostgreSQL or another client,
+# then set SQLITE conf
+if os.getenv('SQLITE', default='N').upper() == 'Y':
+    print(f'ROD --> No default DB client, set the secondary DB config (SQLITE)')
+    DATABASES['default'] = DATABASES['secondary']
+
 print(f'ROD --> DATABASES: {DATABASES["default"]}')
 
 AUTH_PASSWORD_VALIDATORS = [
