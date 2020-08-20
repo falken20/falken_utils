@@ -16,13 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from app_english_dic import views
+
+from app_home import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     # TODO: Update with the true index page and remove the from entry for app_enlgish_dic.views
-    path('', views.card_view, name='index'),
+
+    # path('', views.card_view, name='index'),
+    path('', views.weather_view, name='home'),
 
     # About To_Do app
     path('todo/', include('app_todo.urls')),
@@ -31,7 +34,8 @@ urlpatterns = [
     path('cards/', include('app_english_dic.urls')),
 
     # About Home app
-    path('weather/', include('app_home.urls')),
+
+    path('house/', include('app_home.urls')),
 
     # About Books app
     path('books/', include('app_books.urls')),
