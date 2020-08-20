@@ -26,3 +26,4 @@ class WordItem(models.Model):
 
     def __str__(self):
         return f'{self.word_en}-{self.word_es} / {self.word_type} --> {self.word_times}'
+
