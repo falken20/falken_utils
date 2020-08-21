@@ -67,10 +67,11 @@ def add_author(request):
 
     logging.info(f'{os.getenv("ID_LOG", "")} Starting to add a author in the DB')
 
-    AuthorItem(author_name=request.POST['author_name'],
-               author_surname=request.POST['author_surname']).save()
+    authoritem= AuthorItem(author_name=request.POST['author_name'],
+                           author_surname=request.POST['author_surname'])
+    authoritem.save()
 
-    logging.info(f'{os.getenv("ID_LOG", "")} Author successfully saved in the DB')
+    logging.info(f'{os.getenv("ID_LOG", "")} Author "{authoritem}" successfully saved in the DB')
 
     return HttpResponseRedirect('/books/new_author?status=OK')
 
