@@ -34,7 +34,6 @@ urlpatterns = [
     path('cards/', include('app_english_dic.urls')),
 
     # About Home app
-
     path('house/', include('app_home.urls')),
 
     # About Books app
