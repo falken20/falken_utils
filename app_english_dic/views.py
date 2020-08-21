@@ -13,15 +13,21 @@ def card_view_test(request):
 
 
 def card_view(request):
+    """ Show one card about a english random word from the DB """
+
     count_words = get_count_words(WordItem)
     logging.info(f'{os.getenv("ID_LOG", "")} Number of words in the DB: {count_words}')
 
     template_name = 'english_dic/cards.html'
     queryset = None
+
     if count_words != 0:  # If the table is not empty
         queryset = get_random_item(WordItem)
-        # Increase the number of times it appears
-        queryset.word_times += 1
+        # Increase the number of times it appears, check if the field is NoneType
+        if queryset.word_times:
+            queryset.word_times += 1
+        else:
+            queryset.word_times = 1
         queryset.save()
 
     return render(request, template_name, {'worditem': queryset})
