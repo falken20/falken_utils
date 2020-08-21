@@ -7,7 +7,7 @@
 <div class="container" style="margin-top:20px;">
 
     <form action="/books/add_book/" method="POST"> {% csrf_token %}
-      <div class="form-group">
+      <div class="form-group col-md-2">
         <label for="year">Year</label>
         <input type="number" class="form-control" name="year" id="year" max="2099" placeholder="2020" maxlength="4" required max-width="4">
       </div>

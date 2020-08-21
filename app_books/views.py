@@ -46,3 +46,32 @@ def add_book(request):
 
     return HttpResponseRedirect('/books/')
 
+
+def authors_form(request):
+    """ Show the form for adding authors """
+
+    logging.info(f'{os.getenv("ID_LOG", "")} Showing the authors form')
+
+    template_name = 'books/authors_form.html'
+
+    # If it comes for adding another author (add_author)
+    message = ''
+    if request.GET.get('status', None) == 'OK':
+        message = 'Author successfully saved!!'
+
+    return render(request, template_name, {'message': message})
+
+
+def add_author(request):
+    """ Insert a new author in the DB """
+
+    logging.info(f'{os.getenv("ID_LOG", "")} Starting to add a author in the DB')
+
+    authoritem= AuthorItem(author_name=request.POST['author_name'],
+                           author_surname=request.POST['author_surname'])
+    authoritem.save()
+
+    logging.info(f'{os.getenv("ID_LOG", "")} Author "{authoritem}" successfully saved in the DB')
+
+    return HttpResponseRedirect('/books/new_author?status=OK')
+
