@@ -1,4 +1,5 @@
 # by Richi Rod AKA @richionline / falken20
+# TODO: Change the print statement for Logging
 # TODO: Tag all the files with the copyright
 
 import os
