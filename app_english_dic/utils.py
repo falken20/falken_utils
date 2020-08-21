@@ -22,12 +22,13 @@ def get_random_item(model):
     """ Return a random object of the model"""
     max_id = __get_max_id(model)
 
-    #TODO: Change the print statement for Logging
     logging.debug(f'{os.getenv("ID_LOG", "")} Max ID in the DB: {max_id}')
 
     # Looking for a valid id because the model has deletions
-    while True and not max_id is None:
+    while True and not (max_id is None):
         pk = random.randint(1, max_id)
+        logging.debug(f'{os.getenv("ID_LOG", "")} Random ID that looking for: {pk}')
         worditem = model.objects.filter(pk=pk).first()
+        logging.debug(f'{os.getenv("ID_LOG", "")} Word to show: {worditem}')
         if worditem:
             return worditem
