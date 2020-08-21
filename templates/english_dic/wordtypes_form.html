@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="container" style="margin-top:20px;">
+
+    <form action="/cards/add_wordtype/" method="POST"> {% csrf_token %}
+
+      <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="word_type_id">ID</label>
+            <input type="text" class="form-control" name="word_type_id" id="word_type_id" maxlength="10" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="word_type">Type Word</label>
+            <input type="text" class="form-control" id="word_type" name="word_type">
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+
+    </form>
+
+    <label style="color: green; margin-top:20px">{{ message }} </label>
+
+</div>
+
+{% endblock content %}
