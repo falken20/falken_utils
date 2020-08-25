@@ -17,10 +17,10 @@
         <input type="text" class="form-control" name="word_es" id="word_es" maxlength="100" required>
       </div>
       <div class="form-group col-md-6">
-        <div class="row"
+        <div class="row">
           <label for="word_type_id">Type</label>
           <select id="word_type_id" name="word_type_id" class="form-control" required>
-
+            <option value="" selected></option>
             {% for element in wordtypes %}
               <option value={{ element.word_type_id }}>{{ element.word_type }} </option>
             {% endfor %}
