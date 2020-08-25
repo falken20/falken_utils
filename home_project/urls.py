@@ -16,15 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-
+from . import views as project_views
 from app_home import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    # TODO: Update with the true index page and remove the from entry for app_enlgish_dic.views
+    # About page
+    path('about/', project_views.about_view, name='about'),
 
-    # path('', views.card_view, name='index'),
+    # Home page
     path('', views.weather_view, name='home'),
 
     # About To_Do app
