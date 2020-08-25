@@ -1,6 +1,6 @@
 import setuptools
 
-from utils import __version__
+from home_project import __version__
 
 
 with open("README.md", "r") as fh:
