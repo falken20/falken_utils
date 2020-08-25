@@ -140,10 +140,15 @@ USE_L10N = True
 
 USE_TZ = True
 
+# The static url is the url path where a client or browser can access static files
 STATIC_URL = '/static/'
+
 # ROD: About django.contrib.staticfiles installed apps
+# This generates the directory where files static files are placed when you run ./manage.py collectstatic
+# It is no neccessary for development environment
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# This determines the locations where static files are being pulled from
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
