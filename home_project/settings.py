@@ -146,7 +146,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # ROD: About django.contrib.staticfiles installed apps
-# This generates the directory where files static files are placed when you run ./manage.py collectstatic
+# This generates the directory where files static files are placed when you run python manage.py collectstatic
 # It is no neccessary for development environment
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
