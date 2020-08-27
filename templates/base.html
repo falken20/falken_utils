@@ -10,75 +10,80 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home_project/css/style.css' %}">
+
     <title>Falken Home</title>
   </head>
   <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <header id="main-header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-      <a class="navbar-brand" href="/">Falken Home</a>
+        <a class="navbar-brand" href="/">Falken Home</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHouse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              House
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHouse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                House
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-              <a class="dropdown-item" href="/house">Weather</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Light</a>
-              <a class="dropdown-item" href="#">Heat</a>
-            </div>
-          </li>
+                <a class="dropdown-item" href="/house">Weather</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Light</a>
+                <a class="dropdown-item" href="#">Heat</a>
+              </div>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/todo">Tasks</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/todo">Tasks</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/cards">Cards</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cards">Cards</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/books">Books</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/books">Books</a>
+            </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="reports" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Reports
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="">Times words</a>
-              <a class="dropdown-item" href="">Year books</a>
-            </div>
-          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="reports" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Reports
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="">Times words</a>
+                <a class="dropdown-item" href="">Year books</a>
+              </div>
+            </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="admin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Admin
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="admin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Admin
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-              <a class="dropdown-item" href="/cards/new_wordtype">English word types</a>
-              <a class="dropdown-item" href="/cards/new_word">English/Spanish words</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/books/new_author">Authors</a>
-              <a class="dropdown-item" href="/books/new_book">Books</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/about">About Falken Home</a>
-            </div>
-          </li>
+                <a class="dropdown-item" href="/cards/new_wordtype">English word types</a>
+                <a class="dropdown-item" href="/cards/new_word">English/Spanish words</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/books/new_author">Authors</a>
+                <a class="dropdown-item" href="/books/new_book">Books</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/about">About Falken Home</a>
+              </div>
+            </li>
 
-        </ul>
-      </div>
-    </nav>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
 
     {% block content %}
