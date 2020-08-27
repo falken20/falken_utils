@@ -7,7 +7,7 @@ __url__ = 'https://github.com/falken20/'
 __license__ = 'MIT License'
 __copyright__ = 'Copyright 2020 by Richi Rod AKA @richionline / falken20'
 __features__ = [
-    'New About views with features detail',
+    'New About form with features detail',
     'Update button in ToDo tasks',
     'Some bugs fixed',
 ]
