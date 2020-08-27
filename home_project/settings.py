@@ -14,6 +14,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Looking for .env file for environment vars
 load_dotenv(os.path.join(BASE_DIR, '.env'), override=True)
 
+# A secret key for a particular Django installation, django-admin startproject automatically
+# adds a randomly-generated SECRET_KEY to each new project
 SECRET_KEY = os.getenv('SECRET_KEY', default='')
 
 # Heroku is a server web for running the app
