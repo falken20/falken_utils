@@ -16,7 +16,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'), override=True)
 
 # A secret key for a particular Django installation, django-admin startproject automatically
 # adds a randomly-generated SECRET_KEY to each new project
-SECRET_KEY = os.getenv('SECRET_KEY', default='')
+SECRET_KEY = os.getenv('SECRET_KEY', default='xsd--ammmss!!"kd(sss')
 
 # Heroku is a server web for running the app
 ENV_PRO = ('ENV_PRO' in os.environ and os.environ['ENV_PRO'].upper() == 'Y')
