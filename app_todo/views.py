@@ -7,13 +7,13 @@ from .models import TodoItem
 
 
 def todo_view(request):
-    """Show all the todo tasks"""
+    """Show all the to_do tasks"""
     all_todo_items = TodoItem.objects.all().order_by('date_created')
     return render(request, 'todo/todo.html', {'all_items': all_todo_items})
 
 
 def add_todo(request):
-    """Create a new todo task"""
+    """Create a new to_do task"""
     TodoItem(content=request.POST['content']).save()
     logging.info(f'{os.getenv("ID_LOG", "")} Todo task successfully added')
     # Redirect to the app_todo page
@@ -21,7 +21,7 @@ def add_todo(request):
 
 
 def delete_todo(request, todo_id):
-    """Delete one todo task"""
+    """Delete one to_do task"""
     logging.info(f'{os.getenv("ID_LOG", "")} Deleting the element with id={todo_id}')
     TodoItem.objects.get(id=todo_id).delete()
     logging.info(f'{os.getenv("ID_LOG", "")} Todo task with id={todo_id} successfully deleted')
