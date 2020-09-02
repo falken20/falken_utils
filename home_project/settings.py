@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'app_home',
     'app_todo',
     'app_books',
+    'app_users',
 ]
 
 MIDDLEWARE = [

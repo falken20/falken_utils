@@ -24,6 +24,27 @@
 
     <label style="color: green; margin-top:20px">{{ message }} </label>
 
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Word Type</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for element in wordtypes %}
+
+                <tr style="font-size:smaller;">
+                    <td> {{ element.word_type_id }} </td>
+                    <td> {{ element.word_type }} </td>
+                </tr>
+
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
 </div>
 
 {% endblock content %}

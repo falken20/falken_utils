@@ -48,13 +48,14 @@ def wordtype_form(request):
     logging.info(f'{os.getenv("ID_LOG", "")} Show the form for adding types of word')
 
     template_name = 'english_dic/wordtypes_form.html'
+    queryset = WordTypeItem.objects.all().order_by('word_type')
 
-    # If it comes for adding another type (add_typeword)
+    # If it comes for adding another item
     message = ''
     if request.GET.get('status', None) == 'OK':
         message = 'WordType successfully saved!!'
 
-    return render(request, template_name, {'message': message})
+    return render(request, template_name, {'wordtypes': queryset, 'message': message})
 
 
 def add_wordtype(request):
@@ -77,10 +78,17 @@ def word_form(request):
     logging.info(f'{os.getenv("ID_LOG", "")} Show the form for adding englsh and spanish words')
 
     template_name = 'english_dic/words_form.html'
+    queryset_wordtype = WordTypeItem.objects.all().order_by('word_type')
+    queryset_word = WordItem.objects.all().order_by('word_en')
 
-    queryset = WordTypeItem.objects.all().order_by('word_type')
+    # If it comes for adding another item
+    message = ''
+    if request.GET.get('status', None) == 'OK':
+        message = 'WordType successfully saved!!'
 
-    return render(request, template_name, {'wordtypes': queryset})
+    return render(request, template_name, {'wordtypes': queryset_wordtype,
+                                           'words': queryset_word,
+                                           'message': message})
 
 
 def add_word(request):
@@ -97,4 +105,4 @@ def add_word(request):
 
     logging.info(f'{os.getenv("ID_LOG", "")} Word "{request.POST["word_en"]}" successfully saved in DB')
 
-    return HttpResponseRedirect('/cards/')
+    return HttpResponseRedirect('/cards/new_word?status=OK')
