@@ -1,3 +1,3 @@
 web: gunicorn home_project.wsgi --log-file -
-weather: python utils.cron_dataweather.py
+cron-weather: python utils/cron_dataweather.py
 
