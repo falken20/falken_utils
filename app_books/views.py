@@ -53,13 +53,14 @@ def authors_form(request):
     logging.info(f'{os.getenv("ID_LOG", "")} Showing the authors form')
 
     template_name = 'books/authors_form.html'
+    queryset_author = AuthorItem.objects.all().order_by('author_surname', 'author_name')
 
     # If it comes for adding another author (add_author)
     message = ''
     if request.GET.get('status', None) == 'OK':
         message = 'Author successfully saved!!'
 
-    return render(request, template_name, {'message': message})
+    return render(request, template_name, {'authors': queryset_author, 'message': message})
 
 
 def add_author(request):

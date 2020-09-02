@@ -15,15 +15,16 @@ import psycopg2
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, 'utils/init_files_load/')
 
-BOOKS_CSV_NAME = os.path.join(BASE_DIR, 'init_files_load/bookitem.csv')
+BOOKS_CSV_NAME = os.path.join(DATA_DIR, 'bookitem.csv')
 BOOKS_DB_TABLE = 'app_books_bookitem'
-AUTHORS_CSV_NAME = os.path.join(BASE_DIR, 'init_files_load/authoritem.csv')
+AUTHORS_CSV_NAME = os.path.join(DATA_DIR, 'authoritem.csv')
 AUTHORS_DB_TABLE = 'app_books_authoritem'
 
-WORDTYPES_CSV_NAME = os.path.join(BASE_DIR, 'init_files_load/wordtypeitem.csv')
+WORDTYPES_CSV_NAME = os.path.join(DATA_DIR, 'wordtypeitem.csv')
 WORDTYPES_DB_TABLE = 'app_english_dic_wordtypeitem'
-WORDS_CSV_NAME = os.path.join(BASE_DIR, 'init_files_load/worditem.csv')
+WORDS_CSV_NAME = os.path.join(DATA_DIR, 'worditem.csv')
 WORDS_DB_TABLE = 'app_english_dic_worditem'
 
 DATABASES = {
@@ -199,6 +200,8 @@ if __name__ == '__main__':
     logging.info(f'{os.getenv("ID_LOG", "")} url db: {url_db}')
     engine = create_engine(url_db)
 
+    logging.info(f'{os.getenv("ID_LOG", "")} Folder with CSVs: {DATA_DIR}')
+
     # About english words
     print('\n****** ENGLISH / SPANISH WORDS ******')
     load_csv_wordtypes() if input('Load word types? (Y/n)') == 'Y' else print('Skipping load word types')
@@ -208,3 +211,5 @@ if __name__ == '__main__':
     print('\n****** BOOKS ******')
     load_csv_authors() if input('Load book authors? (Y/n)') == 'Y' else print('Skipping load book authors')
     load_csv_books() if input('Load books? (Y/n)') == 'Y' else print('Skipping load books')
+
+    print('************ CHARGES UTILITY FINISHED ************')
