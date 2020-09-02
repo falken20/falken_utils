@@ -18,7 +18,7 @@
   <body>
     <!-- Barra de navegación -->
     <header id="main-header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="menu-falken">
 
         <a class="navbar-brand" href="/">Falken Home</a>
 
@@ -26,58 +26,78 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar-falken-users">
           <ul class="navbar-nav mr-auto">
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHouse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                House
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- Show an option for normal user -->
+            {% if user.username %}
+              <li class="nav-item">
+                <a class="nav-link" href="/cards">Cards</a>
+              </li>
+            {% endif %}
 
-                <a class="dropdown-item" href="/house">Weather</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Light</a>
-                <a class="dropdown-item" href="#">Heat</a>
-              </div>
-            </li>
+            <!-- Show options for admin user -->
+            {% if user.is_superuser %}
 
+              <li class="nav-item">
+                <a class="nav-link" href="/books">Books</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/todo">Tasks</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHouse" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  House
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <a class="dropdown-item" href="/house">Weather</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Light</a>
+                  <a class="dropdown-item" href="#">Heat</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="reports" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Reports
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Times words</a>
+                  <a class="dropdown-item" href="">Year books</a>
+                  <a class="dropdown-item" href="/house/weather_report">Weather data</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="admin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Admin
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <a class="dropdown-item" href="/cards/new_wordtype">English word type</a>
+                  <a class="dropdown-item" href="/cards/new_word">English/Spanish word</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/books/new_author">Author</a>
+                  <a class="dropdown-item" href="/books/new_book">Book</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/house/new_country">Country</a>
+                  <a class="dropdown-item" href="/house/new_city">City</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/about">About Falken Home</a>
+                </div>
+              </li>
+            {% endif %}
+
+            <!-- Menu option for all the users -->
             <li class="nav-item">
-              <a class="nav-link" href="/todo">Tasks</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/cards">Cards</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/books">Books</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="reports" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Reports
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="">Times words</a>
-                <a class="dropdown-item" href="">Year books</a>
-              </div>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="admin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Admin
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                <a class="dropdown-item" href="/cards/new_wordtype">English word types</a>
-                <a class="dropdown-item" href="/cards/new_word">English/Spanish words</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/books/new_author">Authors</a>
-                <a class="dropdown-item" href="/books/new_book">Books</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/about">About Falken Home</a>
-              </div>
+                {% if user.username %}
+                  <a class="nav-link" href="/login">User: {{ user.username }}</a>
+                {% else %}
+                  <a class="nav-link" href="/login">Login</a>
+                {% endif %}
             </li>
 
           </ul>

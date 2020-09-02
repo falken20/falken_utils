@@ -27,7 +27,7 @@ urlpatterns = [
     path('about/', project_views.about_view, name='about'),
 
     # Home page
-    path('', views.weather_view, name='home'),
+    path('', views.weather_view, name='house'),
 
     # About To_Do app
     path('todo/', include('app_todo.urls')),
@@ -40,4 +40,7 @@ urlpatterns = [
 
     # About Books app
     path('books/', include('app_books.urls')),
+
+    # About login
+    path('', include('app_users.urls')),
 ]

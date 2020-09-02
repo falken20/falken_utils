@@ -30,8 +30,35 @@
       </div>
 
       <button type="submit" class="btn btn-primary">Save</button>
-
     </form>
+
+    <label style="color: green; margin-top:20px">{{ message }} </label>
+
+      <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>English</th>
+                    <th>Spanish</th>
+                    <th>Type</th>
+                    <th>Times</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for element in words %}
+
+                <tr style="font-size:smaller;">
+                    <td> {{ element.word_en }} </td>
+                    <td> {{ element.word_es }} </td>
+                    <td> {{ element.word_type }} </td>
+                    <td> {{ element.word_times }} </td>
+                </tr>
+
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
 
 </div>
 

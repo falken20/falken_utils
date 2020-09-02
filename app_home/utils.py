@@ -17,7 +17,7 @@ def scrap_web(url):
     df = data[0]
 
     logging.info(f'{os.getenv("ID_LOG", "")} url scrapping: {url}')
-    logging.debug(f'{os.getenv("ID_LOG", "")} Data scrapping: {data[0]}')
+    logging.debug(f'{os.getenv("ID_LOG", "")} Data to scrap:\n {data[0]}')
 
     # Cleaning the info it doesn't neccesary
     df = df.drop([4], axis=1) # axis is the column name
@@ -32,5 +32,7 @@ def scrap_web(url):
     # Clean and restore the index number because it is kind of
     # annoying but it is not necessary
     df = df.reset_index(drop=True)
+
+    logging.info(f'{os.getenv("ID_LOG", "")} Data scrapped:\n {df}')
 
     return df
