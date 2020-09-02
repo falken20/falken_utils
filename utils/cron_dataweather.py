@@ -5,12 +5,15 @@ Cron for processing every day the data of weather and save in the DB
 import logging
 import os
 import sys
-from sqlalchemy import create_engine
 from apscheduler.schedulers.blocking import BlockingScheduler
 from django.utils.timezone import now
 
 from app_home.utils import scrap_web
 from app_home.models import CityItem, WeatherDataItem
+
+import django
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'home_project.settings')
+django.setup()
 
 
 URL_WEATHER = 'http://meteomad.net/estaciones/cercedilla/cercedilla.htm'
