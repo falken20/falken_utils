@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="container col-md-4" style="margin-top:20px;">
+
+    <h2>Welcome <b>{{request.user.username}}</b> to Falken Home</h2>
+
+    <hr/>
+    <a href="/logout">Logout</a>
+
+</div>
+
+{% endblock content %}
