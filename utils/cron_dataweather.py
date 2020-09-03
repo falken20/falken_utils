@@ -24,6 +24,7 @@ POSITION_TEMP = 0
 POSITION_RAIN = 5
 POSITION_HUMI = 1
 POSITION_WIND = 3
+CITY_NAME = 'Cercedilla'
 
 
 def load_weather_data():
@@ -37,8 +38,8 @@ def load_weather_data():
         # Transform to a list of dict, each dict with "Parameter" and "Value"
         dict_weather = df_weather.to_dict(orient='records')
 
-        city_item = CityItem.objects.filter(city_name='Cercedilla')
-        logging.info(f'{os.getenv("ID_LOG", "")} City: {format(city_item)}')
+        city_item = CityItem.objects.filter(city_name=CITY_NAME).first()
+        logging.info(f'{os.getenv("ID_LOG", "")} City DB to check the weather: {city_item}')
 
         if city_item:
             WeatherDataItem(weather_temp = dict_weather[POSITION_TEMP]['Value'],
