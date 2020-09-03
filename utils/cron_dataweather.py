@@ -8,15 +8,13 @@ import sys
 from apscheduler.schedulers.blocking import BlockingScheduler
 from django.utils.timezone import now
 
-from app_home.utils import scrap_web
-
 # If you’re using components of Django “standalone” – for example, writing a Python script which
 # loads some Django components
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'home_project.settings')
 import django
 django.setup()
+from app_home.utils import scrap_web
 from app_home.models import CityItem, WeatherDataItem
-
 logging.info(f'{os.getenv("ID_LOG", "")} django.setup() executed')
 
 
@@ -40,6 +38,8 @@ def load_weather_data():
         dict_weather = df_weather.to_dict(orient='records')
 
         city_item = CityItem.objects.filter(city_name='Cercedilla')
+        logging.error(f'{os.getenv("ID_LOG", "")} City: {format(city_item)}')
+
         if city_item:
             WeatherDataItem(weather_temp = dict_weather[POSITION_TEMP]['Value'],
                             weather_rain = dict_weather[POSITION_RAIN]['Value'],
