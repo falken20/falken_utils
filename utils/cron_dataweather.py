@@ -38,7 +38,7 @@ def load_weather_data():
         dict_weather = df_weather.to_dict(orient='records')
 
         city_item = CityItem.objects.filter(city_name='Cercedilla')
-        logging.error(f'{os.getenv("ID_LOG", "")} City: {format(city_item)}')
+        logging.info(f'{os.getenv("ID_LOG", "")} City: {format(city_item)}')
 
         if city_item:
             WeatherDataItem(weather_temp = dict_weather[POSITION_TEMP]['Value'],
@@ -60,7 +60,7 @@ cron_data_weather = BlockingScheduler()
 
 # The cron executes every day and every hour at 59 minutes (by default day, hour and others params is *)
 # It is no neccesary set hour=* because is a default value
-@cron_data_weather.scheduled_job('cron', day_of_week='mon-sun', hour='*', minute=59)
+@cron_data_weather.scheduled_job('cron', day_of_week='mon-sun', hour='*', minute=*)
 def scheduled_cron_data_weather():
     """ Process to get the temperature and rain data every hour and to save in DB """
 
