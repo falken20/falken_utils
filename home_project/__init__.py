@@ -5,7 +5,7 @@ __version__ = '1.1.0'
 __author__ = 'Richi Rod'
 __url__ = 'https://github.com/falken20/'
 __license__ = 'MIT License'
-__copyright__ = 'Copyright 2020 by Richi Rod AKA @richionline / falken20'
+__copyright__ = '© 2020 by Richi Rod AKA @richionline / falken20'
 __features__ = [
     'New About form with features detail',
     'Update button in ToDo tasks',
@@ -13,7 +13,7 @@ __features__ = [
     'Show tables in admin forms',
     'DB weather data model created',
     'Weather report',
-    'login and users functionality'
+    'login and users functionality',
     'Some bugs fixed',
 ]
 
