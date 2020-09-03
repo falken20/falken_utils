@@ -10,6 +10,7 @@ from django.utils.timezone import now
 
 # If you’re using components of Django “standalone” – for example, writing a Python script which
 # loads some Django components
+# https://docs.djangoproject.com/en/3.1/topics/settings/#custom-default-settings
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'home_project.settings')
 import django
 django.setup()
@@ -42,17 +43,17 @@ def load_weather_data():
         logging.info(f'{os.getenv("ID_LOG", "")} City DB to check the weather: {city_item}')
 
         if city_item:
-            WeatherDataItem(weather_temp = dict_weather[POSITION_TEMP]['Value'],
-                            weather_rain = dict_weather[POSITION_RAIN]['Value'],
-                            weather_humidity = dict_weather[POSITION_HUMI]['Value'],
-                            weather_wind = dict_weather[POSITION_WIND]['Value'],
+            WeatherDataItem(weather_temp=dict_weather[POSITION_TEMP]['Value'],
+                            weather_rain=dict_weather[POSITION_RAIN]['Value'],
+                            weather_humidity=dict_weather[POSITION_HUMI]['Value'],
+                            weather_wind=dict_weather[POSITION_WIND]['Value'],
                             weather_date=now(),
                             city_name=city_item).save()
             logging.info(f'{os.getenv("ID_LOG", "")} Save weather data ok at: {now()}')
         else:
             logging.error(f'{os.getenv("ID_LOG", "")} Problems to find the city to save weather data')
 
-    except (Exception) as error:
+    except Exception as error:
         logging.error(f'{os.getenv("ID_LOG", "")} ERROR saving weather data {sys.exc_info()[2].tb_lineno}: {error}')
 
 
@@ -61,13 +62,13 @@ cron_data_weather = BlockingScheduler()
 
 # The cron executes every day and every hour at 59 minutes (by default day, hour and others params is *)
 # It is no neccesary set hour=* because is a default value
-@cron_data_weather.scheduled_job('cron', day_of_week='mon-sun', hour='*', minute='1-59')
+@cron_data_weather.scheduled_job('cron', day_of_week='mon-sun', hour='*', minute='59')
 def scheduled_cron_data_weather():
     """ Process to get the temperature and rain data every hour and to save in DB """
 
-    logging.info(f'{os.getenv("ID_LOG", "")} ************ START CRON DATA WEATHER ************')
-
+    logging.info(f'{os.getenv("ID_LOG", "")} ***** START CRON DATA WEATHER *****')
     load_weather_data()
+    logging.info(f'{os.getenv("ID_LOG", "")} ***** END CRON DATA WEATHER *****')
 
 
 cron_data_weather.start()
