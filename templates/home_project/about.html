@@ -19,11 +19,18 @@
           <h1 class="card-title"> {{ about_data.title }}</h1>
           <h6 class="card-text"> {{ about_data.author }} - Version {{ about_data.version }} / {{ about_data.license }}</h6>
           <p class="card-text"><small class="text-muted">{{ about_data.copyrigth }} </small></p>
-          <a href="{{ about_data.url }}" target="_blank">
+          <a href="{{ about_data.url_github }}" target="_blank">
             <img src="{% static 'home_project/img/github.png' %}" class="card-img" alt="falken20"
                  style="max-height:25px; width: auto; margin:0 auto;">
           </a>
-
+          <a href="{{ about_data.url_linkedin }}" target="_blank">
+            <img src="{% static 'home_project/img/linkedin.png' %}" class="card-img" alt="falken20"
+                 style="max-height:25px; width: auto; margin:0 auto;">
+          </a>
+          <a href="{{ about_data.url_twitter }}" target="_blank">
+            <img src="{% static 'home_project/img/twitter.png' %}" class="card-img" alt="falken20"
+                 style="max-height:25px; width: auto; margin:0 auto;">
+          </a>
         </div>
 
       </div>
