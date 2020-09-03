@@ -11,10 +11,6 @@ from django.utils.timezone import now
 from app_home.utils import scrap_web
 from app_home.models import CityItem, WeatherDataItem
 
-import django
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'home_project.settings')
-django.setup()
-
 
 URL_WEATHER = 'http://meteomad.net/estaciones/cercedilla/cercedilla.htm'
 # This constant is for to know the position in the dict of the values
@@ -61,6 +57,13 @@ def scheduled_cron_data_weather():
     """ Process to get the temperature and rain data every hour and to save in DB """
 
     logging.info(f'{os.getenv("ID_LOG", "")} ************ START CRON DATA WEATHER ************')
+
+    # If you’re using components of Django “standalone” – for example, writing a Python script which
+    # loads some Django components
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'home_project.settings')
+    import django
+    django.setup()
+    logging.info(f'{os.getenv("ID_LOG", "")} django.setup() executed')
 
     load_weather_data()
 
