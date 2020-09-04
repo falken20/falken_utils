@@ -61,9 +61,9 @@ def load_weather_data():
 cron_data_weather = BlockingScheduler()
 
 
-# The cron executes every day and every hour at 59 minutes (by default day, hour and others params is *)
+# The cron executes every day and every 6 hour (by default day, hour and others params is *)
 # It is no neccesary set hour=* because is a default value
-@cron_data_weather.scheduled_job('cron', day_of_week='mon-sun', hour='*', minute='1-59')
+@cron_data_weather.scheduled_job('cron', day_of_week='mon-sun', hour='0-23/6')
 def scheduled_cron_data_weather():
     """ Process to get the temperature and rain data every hour and to save in DB """
 
