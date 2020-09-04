@@ -10,14 +10,24 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Day Weather</th>
+                <th>City</th>
+                <th>🕘</th>
+                <th>☀️</th>
+                <th>🌧</th>
+                <th>💨</th>
+                <th>💧</th>
             </tr>
         </thead>
         <tbody>
         {% for element in weather_data %}
 
             <tr style="font-size:smaller;">
-                <td> {{ element }} </td>
+                <td> {{ element.city_name }} </td>
+                <td> {{ element.weather_date.time.hour }}:{{ element.weather_date.time.minute }}</td>
+                <td> {{ element.weather_temp }} </td>
+                <td> {{ element.weather_rain }} </td>
+                <td> {{ element.weather_wind }} </td>
+                <td> {{ element.weather_humidity }} </td>
             </tr>
 
         {% endfor %}
