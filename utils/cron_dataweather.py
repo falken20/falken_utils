@@ -15,7 +15,7 @@ from django.utils.timezone import now
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'home_project.settings')
 import django
 django.setup()
-from .utils import scrap_web, get_float
+from app_home.utils import scrap_web, get_float
 from app_home.models import CityItem, WeatherDataItem
 logging.info(f'{os.getenv("ID_LOG", "")} django.setup() executed')
 
