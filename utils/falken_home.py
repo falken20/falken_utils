@@ -1,7 +1,7 @@
 # by Richi Rod AKA @richionline / falken20
 
 from utils import __version__
-from utils.utils import JSONUtils
+from app_home.utils import JSONUtils
 from utils.energy import *
 import logging
 
