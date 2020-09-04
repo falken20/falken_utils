@@ -6,8 +6,7 @@ from django.shortcuts import render
 from django.utils.timezone import now
 from django.http import HttpResponse, HttpResponseRedirect
 
-
-from .utils import scrap_web
+from utils.utils import scrap_web
 from .models import CountryItem, CityItem, WeatherDataItem
 
 URL_WEATHER = 'http://meteomad.net/estaciones/cercedilla/cercedilla.htm'
@@ -16,10 +15,13 @@ URL_WEATHER = 'http://meteomad.net/estaciones/cercedilla/cercedilla.htm'
 def weather_view(request):
     """ For getting temperature data from scrapping climate web and showing."""
 
+    logging.info(f'{os.getenv("ID_LOG", "")} Showing the weather screen')
+
     # Getting a dataframe with the all data weather
     df_weather = scrap_web(URL_WEATHER)
 
     dict_weather = df_weather.to_dict(orient='records')
+
     # TODO: In some momment the city should be choosed by the user
     city = 'Cercedilla'
 
