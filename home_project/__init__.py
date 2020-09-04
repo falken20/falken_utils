@@ -14,7 +14,7 @@ __features__ = [
     'Admin forms for countries and cities',
     'Show tables in admin forms',
     'DB weather data model created',
-    'Weather report',
+    'Day Weather report',
     'login and users functionality',
     'Some bugs fixed',
 ]
