@@ -8,8 +8,6 @@ import sys
 from apscheduler.schedulers.blocking import BlockingScheduler
 from django.utils.timezone import now
 
-from . import utils
-
 
 # If you’re using components of Django “standalone” – for example, writing a Python script which
 # loads some Django components
@@ -17,7 +15,7 @@ from . import utils
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'home_project.settings')
 import django
 django.setup()
-from app_home.utils import scrap_web
+from app_home.utils import scrap_web, get_float
 from app_home.models import CityItem, WeatherDataItem
 logging.info(f'{os.getenv("ID_LOG", "")} django.setup() executed')
 
@@ -46,10 +44,10 @@ def load_weather_data():
         logging.info(f'{os.getenv("ID_LOG", "")} City DB to check the weather: {city_item}')
 
         if city_item:
-            WeatherDataItem(weather_temp=utils.get_float(dict_weather[POSITION_TEMP]['Value']),
-                            weather_rain=utils.get_float(dict_weather[POSITION_RAIN]['Value']),
-                            weather_humidity=utils.get_float(dict_weather[POSITION_HUMI]['Value']),
-                            weather_wind=utils.get_float(dict_weather[POSITION_WIND]['Value']),
+            WeatherDataItem(weather_temp=get_float(dict_weather[POSITION_TEMP]['Value']),
+                            weather_rain=get_float(dict_weather[POSITION_RAIN]['Value']),
+                            weather_humidity=get_float(dict_weather[POSITION_HUMI]['Value']),
+                            weather_wind=get_float(dict_weather[POSITION_WIND]['Value']),
                             weather_date=now(),
                             city_name=city_item).save()
             logging.info(f'{os.getenv("ID_LOG", "")} Save weather data ok at: {now()}')

@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.utils.timezone import now
 from django.http import HttpResponse, HttpResponseRedirect
 
-from utils.utils import scrap_web
+from .utils import scrap_web
 from .models import CountryItem, CityItem, WeatherDataItem
 
 URL_WEATHER = 'http://meteomad.net/estaciones/cercedilla/cercedilla.htm'
