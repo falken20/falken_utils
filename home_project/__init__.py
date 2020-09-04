@@ -2,7 +2,7 @@
 
 __title__ = 'Falken Home'
 __version__ = '1.1.0'
-__author__ = 'Richi Rod'
+__author__ = 'Falken'
 __url_github__ = 'https://github.com/falken20/'
 __url_twitter__ = 'https://twitter.com/richionline'
 __url_linkedin__ = 'https://www.linkedin.com/in/richionline/'
