@@ -5,12 +5,14 @@
 {% load static %}
 <!-- <link rel="stylesheet" type="text/css" href="{% static 'english_dic/css/style.css' %}"> -->
 
-<div class="container">
+<div class="container col-md-6">
 
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>City</th>
+                <th colspan="5" style="text-align: center">{{ city }}</th>
+            </tr>
+            <tr>
                 <th>🕘</th>
                 <th>☀️</th>
                 <th>🌧</th>
@@ -22,7 +24,6 @@
         {% for element in weather_data %}
 
             <tr style="font-size:smaller;">
-                <td> {{ element.city_name }} </td>
                 <td> {{ element.weather_date.time.hour }}:{{ element.weather_date.time.minute }}</td>
                 <td> {{ element.weather_temp }}º </td>
                 <td> {{ element.weather_rain }}mm </td>
