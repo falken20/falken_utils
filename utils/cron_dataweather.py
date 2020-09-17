@@ -58,13 +58,25 @@ def load_weather_data():
         logging.error(f'{os.getenv("ID_LOG", "")} ERROR saving weather data {sys.exc_info()[2].tb_lineno}: {error}')
 
 
+# Create the cron object
 cron_data_weather = BlockingScheduler()
 
 
 # The cron executes every day and every 6 hour (by default day, hour and others params is *)
 # It is no neccesary set hour=* because is a default value
+"""
 @cron_data_weather.scheduled_job('cron', day_of_week='mon-sun', hour='0-23/6')
 def scheduled_cron_data_weather():
+    # Process to get the temperature and rain data every hour and to save in DB
+
+    logging.info(f'{os.getenv("ID_LOG", "")} ***** START CRON DATA WEATHER *****')
+    load_weather_data()
+    logging.info(f'{os.getenv("ID_LOG", "")} ***** END CRON DATA WEATHER *****')
+"""
+
+
+@cron_data_weather.scheduled_job('interval', hour='1')
+def timed_job():
     """ Process to get the temperature and rain data every hour and to save in DB """
 
     logging.info(f'{os.getenv("ID_LOG", "")} ***** START CRON DATA WEATHER *****')
