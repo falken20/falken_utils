@@ -67,12 +67,13 @@ cron_data_weather = BlockingScheduler()
 """
 @cron_data_weather.scheduled_job('cron', day_of_week='mon-sun', hour='0-23/6')
 def scheduled_cron_data_weather():
-    """ Process to get the temperature and rain data every hour and to save in DB """
+    # Process to get the temperature and rain data every hour and to save in DB
 
     logging.info(f'{os.getenv("ID_LOG", "")} ***** START CRON DATA WEATHER *****')
     load_weather_data()
     logging.info(f'{os.getenv("ID_LOG", "")} ***** END CRON DATA WEATHER *****')
 """
+
 
 @cron_data_weather.scheduled_job('interval', hour='1')
 def timed_job():
