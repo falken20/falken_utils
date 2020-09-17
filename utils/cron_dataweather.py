@@ -75,7 +75,7 @@ def scheduled_cron_data_weather():
 """
 
 
-@cron_data_weather.scheduled_job('interval', hour='1')
+@cron_data_weather.scheduled_job('interval', hours='1')
 def timed_job():
     """ Process to get the temperature and rain data every hour and to save in DB """
 
