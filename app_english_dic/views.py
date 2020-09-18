@@ -118,3 +118,13 @@ def words_report_view(request):
     queryset = WordItem.objects.all().order_by('-word_times')
 
     return render(request, template_name, {'words_data': queryset})
+
+
+def init_counter(request):
+    """ Initialize the word times counter to 0 """
+
+    logging.info(f'{os.getenv("ID_LOG", "")} Starting to initialize the words time counter')
+
+    WordItem.objects.all().update(word_times=0)
+
+    return HttpResponseRedirect('/cards/words_top_report')
