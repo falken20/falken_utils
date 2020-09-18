@@ -24,7 +24,7 @@
         {% for element in weather_data %}
 
             <tr style="font-size:smaller;">
-                <td> {{ element.weather_date.time.hour }}:{{ element.weather_date.time.minute }}</td>
+                <td> {{ element.weather_date.time.hour }}:00</td>
                 <td> {{ element.weather_temp }}º </td>
                 <td> {{ element.weather_rain }}mm </td>
                 <td> {{ element.weather_wind }}Km/h </td>

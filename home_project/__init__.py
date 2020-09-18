@@ -1,7 +1,7 @@
 # by Richi Rod AKA @richionline / falken20
 
 __title__ = 'Falken Home'
-__version__ = '1.1.0'
+__version__ = '1.1.1'
 __author__ = 'Falken'
 __url_github__ = 'https://github.com/falken20/'
 __url_twitter__ = 'https://twitter.com/richionline'
@@ -9,14 +9,9 @@ __url_linkedin__ = 'https://www.linkedin.com/in/richionline/'
 __license__ = 'MIT License'
 __copyright__ = '© 2020 by Richi Rod AKA @richionline / falken20'
 __features__ = [
-    'New About form with features detail',
-    'Update button in ToDo tasks',
-    'Admin forms for countries and cities',
-    'Show tables in admin forms',
-    'DB weather data model created',
-    'Day Weather report',
-    'login and users functionality',
-    'Some bugs fixed',
+    'Top words report',
+    'Books per year report',
+    'Fix the cron of weather',
 ]
 
 

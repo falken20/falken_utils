@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
+from django.db.models import Count
 import logging
 import os
 
@@ -75,4 +76,17 @@ def add_author(request):
     logging.info(f'{os.getenv("ID_LOG", "")} Author "{authoritem}" successfully saved in the DB')
 
     return HttpResponseRedirect('/books/new_author?status=OK')
+
+
+def books_report_view(request):
+    """ Show number of books per year """
+
+    logging.info(f'{os.getenv("ID_LOG", "")} Starting to show number of books per year report')
+
+    template_name = 'books/books_year_report.html'
+
+    queryset = BookItem.objects.values('book_year').annotate(books_total=Count('book_title')).order_by('-book_year')
+    total = BookItem.objects.all().count()
+
+    return render(request, template_name, {'books_data': queryset, 'total': total})
 
