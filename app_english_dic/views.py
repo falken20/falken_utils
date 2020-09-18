@@ -106,3 +106,25 @@ def add_word(request):
     logging.info(f'{os.getenv("ID_LOG", "")} Word "{request.POST["word_en"]}" successfully saved in DB')
 
     return HttpResponseRedirect('/cards/new_word?status=OK')
+
+
+def words_report_view(request):
+    """ Show top of words showing in the cards """
+
+    logging.info(f'{os.getenv("ID_LOG", "")} Starting to show the top of words')
+
+    template_name = 'english_dic/words_top_report.html'
+
+    queryset = WordItem.objects.all().order_by('-word_times')
+
+    return render(request, template_name, {'words_data': queryset})
+
+
+def init_counter(request):
+    """ Initialize the word times counter to 0 """
+
+    logging.info(f'{os.getenv("ID_LOG", "")} Starting to initialize the words time counter')
+
+    WordItem.objects.all().update(word_times=0)
+
+    return HttpResponseRedirect('/cards/words_top_report')
