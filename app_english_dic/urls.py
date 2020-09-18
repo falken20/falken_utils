@@ -11,4 +11,8 @@ urlpatterns = [
 
     path('new_word/', views.word_form, name='form_new_word'),
     path('add_word/', views.add_word, name='create_new_word'),
+
+    path('init_counter/', views.init_counter, name='init_counter'),
+
+    path('words_top_report', views.words_report_view, name='report_words_top'),
 ]

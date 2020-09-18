@@ -102,6 +102,9 @@ def weather_report_view(request):
     queryset = WeatherDataItem.objects.filter(weather_date__year=today.year,
                                               weather_date__month=today.month,
                                               weather_date__day=today.day).order_by('-weather_date')
-    city = queryset[0].city_name
+    if queryset:
+        city = queryset[0].city_name
+    else:
+        city = 'No data for today'
 
     return render(request, template_name, {'weather_data': queryset, 'city': city})

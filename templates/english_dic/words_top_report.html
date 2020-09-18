@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'english_dic/css/style.css' %}"> -->
+
+<div class="container col-md-4">
+
+    <table class="table table-striped" style="text-align:center;">
+        <thead>
+            <tr>
+                <th>EN</th>
+                <th>ES</th>
+                <th>Times</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for element in words_data %}
+
+            <tr style="font-size:smaller;">
+                <td> {{ element.word_en }} </td>
+                <td> {{ element.word_es }} </td>
+                <td> {{ element.word_times}} </td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock content %}

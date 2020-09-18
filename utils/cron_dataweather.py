@@ -6,7 +6,7 @@ import logging
 import os
 import sys
 from apscheduler.schedulers.blocking import BlockingScheduler
-from django.utils.timezone import now
+from django.utils.timezone import now, localtime
 
 
 # If you’re using components of Django “standalone” – for example, writing a Python script which
@@ -48,7 +48,7 @@ def load_weather_data():
                             weather_rain=get_float(dict_weather[POSITION_RAIN]['Value']),
                             weather_humidity=get_float(dict_weather[POSITION_HUMI]['Value']),
                             weather_wind=get_float(dict_weather[POSITION_WIND]['Value']),
-                            weather_date=now(),
+                            weather_date=localtime(now()),
                             city_name=city_item).save()
             logging.info(f'{os.getenv("ID_LOG", "")} Save weather data ok at: {now()}')
         else:
@@ -75,7 +75,7 @@ def scheduled_cron_data_weather():
 """
 
 
-@cron_data_weather.scheduled_job('interval', hour='1')
+@cron_data_weather.scheduled_job('interval', hours=2)
 def timed_job():
     """ Process to get the temperature and rain data every hour and to save in DB """
 
