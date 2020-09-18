@@ -9,4 +9,6 @@ urlpatterns = [
 
     path('new_author/', views.authors_form, name='form_new_author'),
     path('add_author/', views.add_author, name='create_new_author'),
+
+    path('books_report', views.books_report_view, name='report_books'),
 ]

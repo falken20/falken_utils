@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'english_dic/css/style.css' %}"> -->
+
+<div class="container col-md-2">
+
+    <table class="table table-striped" style="text-align:center;">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Books (Total: {{ total }})</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for element in books_data %}
+
+            <tr style="font-size:smaller;">
+                <td> {{ element.book_year }} </td>
+                <td> {{ element.books_total}} </td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock content %}
