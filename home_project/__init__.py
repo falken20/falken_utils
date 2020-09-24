@@ -1,7 +1,7 @@
 # by Richi Rod AKA @richionline / falken20
 
 __title__ = 'Falken Home'
-__version__ = '1.1.1'
+__version__ = '1.1.2'
 __author__ = 'Falken'
 __url_github__ = 'https://github.com/falken20/'
 __url_twitter__ = 'https://twitter.com/richionline'
@@ -12,6 +12,7 @@ __features__ = [
     'Top words report',
     'Books per year report',
     'Fix the cron of weather',
+    'New logo and ico',
 ]
 
 
