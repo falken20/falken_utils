@@ -75,7 +75,8 @@ def scheduled_cron_data_weather():
 """
 
 
-@cron_data_weather.scheduled_job('interval', hours=3)
+# Set up the cron as 'interval' and executing every 8 hours
+@cron_data_weather.scheduled_job('interval', hours=8, start_date='2020-11-01 07:00:00')
 def timed_job():
     """ Process to get the temperature and rain data every hour and to save in DB """
 
