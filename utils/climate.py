@@ -8,7 +8,7 @@ from time import sleep
 import logging
 import os
 
-AIR_CONDITIONERS = {u'Salón': 'ip.ip.ip.ip', 'Other Room': 'ip.ip.ip.ip'}
+AIR_CONDITIONERS = {u'Salón': 'ip.ip.ip.ip'}
 
 
 def read_temp():
