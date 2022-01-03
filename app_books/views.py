@@ -47,6 +47,14 @@ def add_book(request):
 
     return HttpResponseRedirect('/books/')
 
+def delete_book(request, book_id):
+    """Delete one book"""
+    logging.info(f'{os.getenv("ID_LOG", "")} Deleting the book with id={book_id}')
+    BookItem.objects.get(id=book_id).delete()
+    logging.info(f'{os.getenv("ID_LOG", "")} Book with id={book_id} successfully deleted')
+    # Redirect to the books page
+    return HttpResponseRedirect('/books/')
+
 
 def authors_form(request):
     """ Show the form for adding authors """
@@ -75,6 +83,15 @@ def add_author(request):
 
     logging.info(f'{os.getenv("ID_LOG", "")} Author "{authoritem}" successfully saved in the DB')
 
+    return HttpResponseRedirect('/books/new_author?status=OK')
+
+
+def delete_author(request, author_id):
+    """Delete one author"""
+    logging.info(f'{os.getenv("ID_LOG", "")} Deleting the author with id={author_id}')
+    AuthorItem.objects.get(id=author_id).delete()
+    logging.info(f'{os.getenv("ID_LOG", "")} Author with id={author_id} successfully deleted')
+    # Redirect to the author page
     return HttpResponseRedirect('/books/new_author?status=OK')
 
 
