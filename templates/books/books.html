@@ -22,6 +22,21 @@
                 <td> {{ element.book_year }} </td>
                 <td> {{ element.book_title }} </td>
                 <td> {{ element.book_author }} </td>
+                <td>
+                    <form action=""
+                            style="display: inline;"
+                            method="POST"> {% csrf_token %}
+                        <input type="submit" value="Edit" class="btn btn-success btn-sm btn-block">
+                    </form>
+
+                    <div style="margin-top: 1px;">
+                        <form action="/books/delete_book/{{element.id}}/"
+                              style="display: inline;"
+                              method="POST"> {% csrf_token %}
+                            <input type="submit" value="Delete" class="btn btn-danger btn-sm btn-block">
+                        </form>
+                    </div>
+                </td>
             </tr>
 
         {% endfor %}
