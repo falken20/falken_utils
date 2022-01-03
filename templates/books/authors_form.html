@@ -32,6 +32,15 @@
 
                 <tr style="font-size:smaller;">
                     <td> {{ element }} </td>
+                    <td>
+                        <div style="margin-top: 1px;">
+                            <form action="/books/delete_author/{{element.id}}/"
+                                style="display: inline;"
+                                method="POST"> {% csrf_token %}
+                                <input type="submit" value="Delete" class="btn btn-danger btn-sm btn-block">
+                            </form>
+                        </div>
+                    </td>
                 </tr>
 
             {% endfor %}
