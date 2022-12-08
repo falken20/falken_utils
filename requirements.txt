@@ -11,7 +11,7 @@ django_heroku
 
 # Others
 asgiref==3.2.10
-certifi==2020.6.20
+certifi==2022.12.7
 chardet==3.0.4
 idna==2.10
 numpy==1.19.1
