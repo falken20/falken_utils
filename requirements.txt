@@ -7,7 +7,6 @@ psycopg2==2.8.5  # PostgreSQL
 # Necessary in Heroku
 gunicorn>=20.0.4
 whitenoise>=5.1.0
-django_heroku
 
 # Others
 asgiref==3.2.10

@@ -1,5 +1,6 @@
 lib/
 temp/
+credentials.yaml
 
 ### Python - Django ###
 *.log
