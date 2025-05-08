@@ -1,5 +1,5 @@
 requests>=2.22.0
-django==4.2.18
+django==4.2.21
 pandas>=0.25.3
 lxml==4.9.1
 psycopg2==2.8.5  # PostgreSQL
